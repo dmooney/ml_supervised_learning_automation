@@ -1,0 +1,120 @@
+
+Options: -R -N 4 -Q 1 -M 3 
+
+J48 pruned tree
+------------------
+
+input16 <= 18
+|   input11 <= 43
+|   |   input15 <= 34: 1 (12.0/3.0)
+|   |   input15 > 34
+|   |   |   input12 <= 5
+|   |   |   |   input13 <= 40: 1 (12.0)
+|   |   |   |   input13 > 40: 2 (45.0/12.0)
+|   |   |   input12 > 5: 2 (68.0/2.0)
+|   input11 > 43
+|   |   input6 <= 65
+|   |   |   input10 <= 21: 6 (21.0)
+|   |   |   input10 > 21: 4 (75.0/7.0)
+|   |   input6 > 65
+|   |   |   input4 <= 84
+|   |   |   |   input1 <= 2: 1 (43.0/4.0)
+|   |   |   |   input1 > 2
+|   |   |   |   |   input1 <= 18: 7 (8.0/5.0)
+|   |   |   |   |   input1 > 18: 9 (42.0/1.0)
+|   |   |   input4 > 84
+|   |   |   |   input5 <= 58
+|   |   |   |   |   input7 <= 51
+|   |   |   |   |   |   input2 <= 85: 9 (7.0/1.0)
+|   |   |   |   |   |   input2 > 85: 5 (30.0/12.0)
+|   |   |   |   |   input7 > 51
+|   |   |   |   |   |   input1 <= 28: 7 (7.0)
+|   |   |   |   |   |   input1 > 28: 9 (30.0)
+|   |   |   |   input5 > 58
+|   |   |   |   |   input1 <= 70: 3 (84.0/16.0)
+|   |   |   |   |   input1 > 70: 9 (4.0)
+input16 > 18
+|   input14 <= 59
+|   |   input7 <= 18: 6 (48.0/5.0)
+|   |   input7 > 18
+|   |   |   input14 <= 10: 3 (6.0/3.0)
+|   |   |   input14 > 10
+|   |   |   |   input1 <= 39
+|   |   |   |   |   input16 <= 65: 7 (71.0)
+|   |   |   |   |   input16 > 65: 8 (4.0)
+|   |   |   |   input1 > 39: 8 (28.0/1.0)
+|   input14 > 59
+|   |   input9 <= 64
+|   |   |   input13 <= 60
+|   |   |   |   input14 <= 74: 8 (8.0)
+|   |   |   |   input14 > 74
+|   |   |   |   |   input15 <= 36: 8 (3.0)
+|   |   |   |   |   input15 > 36: 5 (46.0)
+|   |   |   input13 > 60
+|   |   |   |   input12 <= 28: 0 (4.0)
+|   |   |   |   input12 > 28: 8 (29.0)
+|   |   input9 > 64
+|   |   |   input6 <= 53: 0 (86.0/2.0)
+|   |   |   input6 > 53: 8 (4.0/1.0)
+
+Number of Leaves  : 	27
+
+Size of the tree : 	53
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         989               89.9909 %
+Incorrectly Classified Instances       110               10.0091 %
+Kappa statistic                          0.8886
+Mean absolute error                      0.0314
+Root mean squared error                  0.1296
+Relative absolute error                 17.49   %
+Root relative squared error             43.2248 %
+Total Number of Instances             1099     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 116   1   0   0   2   0   3   0   2   0 |   a = 0
+   0  75  20   7   1   0   0   0   0   1 |   b = 1
+   0   0 128   3   0   0   0   0   0   0 |   c = 2
+   0   0   0  95   0   0   0   0   0   1 |   d = 3
+   0   0   0   0  92  10   1   0   0   1 |   e = 4
+   0   1   0  15   0  87   1   0   0   0 |   f = 5
+   0   1   0   0   0   3  83   0   5   0 |   g = 6
+   0   2   0   3   0   0   0 106   1   0 |   h = 7
+   0   0   0   1   0   0   2   2  97   0 |   i = 8
+   2   5   0   3   6   1   0   3   0 110 |   j = 9
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        2808               85.1425 %
+Incorrectly Classified Instances       490               14.8575 %
+Kappa statistic                          0.8349
+Mean absolute error                      0.0407
+Root mean squared error                  0.1585
+Relative absolute error                 22.6271 %
+Root relative squared error             52.786  %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 305   0   0   0   5   0  13   0  14   0 |   a = 0
+   0 260  66  17   2   0   0  10   0  11 |   b = 1
+   0   4 301  19   0   1   0   4   1   0 |   c = 2
+   0   0   1 303   1   3   0   2   0   4 |   d = 3
+   0   1   1   0 307  32  11   1   0   6 |   e = 4
+   1   1   0  45   0 251   3   0   3   7 |   f = 5
+   0   7   0   0   0  14 267   0  26   5 |   g = 6
+   0   6   4  19   0   0   0 310   4   1 |   h = 7
+   3   3   0   7   0   0  12   4 295   0 |   i = 8
+  10   8   1  17  29   6   0  13   1 209 |   j = 9
+

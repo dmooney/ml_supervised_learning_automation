@@ -1,0 +1,148 @@
+
+Options: -R -N 2 -Q 1 -M 3 -A 
+
+J48 pruned tree
+------------------
+
+input14 <= 53
+|   input16 <= 17
+|   |   input11 <= 39
+|   |   |   input15 <= 38: 1 (16.0/1.0)
+|   |   |   input15 > 38
+|   |   |   |   input4 <= 90: 1 (12.0/1.0)
+|   |   |   |   input4 > 90
+|   |   |   |   |   input12 <= 2
+|   |   |   |   |   |   input13 <= 37: 1 (9.0)
+|   |   |   |   |   |   input13 > 37: 2 (35.0/11.0)
+|   |   |   |   |   input12 > 2: 2 (91.0/3.0)
+|   |   input11 > 39
+|   |   |   input6 <= 62
+|   |   |   |   input10 <= 16: 6 (25.0)
+|   |   |   |   input10 > 16
+|   |   |   |   |   input5 <= 39: 4 (91.0)
+|   |   |   |   |   input5 > 39: 9 (3.0/1.0)
+|   |   |   input6 > 62
+|   |   |   |   input10 <= 58
+|   |   |   |   |   input14 <= 13
+|   |   |   |   |   |   input7 <= 25: 5 (16.0)
+|   |   |   |   |   |   input7 > 25
+|   |   |   |   |   |   |   input15 <= 58
+|   |   |   |   |   |   |   |   input1 <= 76
+|   |   |   |   |   |   |   |   |   input4 <= 85: 9 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   input4 > 85: 3 (96.0/5.0)
+|   |   |   |   |   |   |   |   input1 > 76
+|   |   |   |   |   |   |   |   |   input8 <= 72: 5 (5.0)
+|   |   |   |   |   |   |   |   |   input8 > 72: 9 (12.0)
+|   |   |   |   |   |   |   input15 > 58: 1 (5.0/2.0)
+|   |   |   |   |   input14 > 13
+|   |   |   |   |   |   input16 <= 2: 4 (13.0/2.0)
+|   |   |   |   |   |   input16 > 2: 6 (6.0/1.0)
+|   |   |   |   input10 > 58
+|   |   |   |   |   input1 <= 24
+|   |   |   |   |   |   input7 <= 59: 9 (11.0/2.0)
+|   |   |   |   |   |   input7 > 59
+|   |   |   |   |   |   |   input2 <= 77
+|   |   |   |   |   |   |   |   input4 <= 86: 1 (56.0)
+|   |   |   |   |   |   |   |   input4 > 86: 7 (4.0/1.0)
+|   |   |   |   |   |   |   input2 > 77: 7 (20.0/4.0)
+|   |   |   |   |   input1 > 24
+|   |   |   |   |   |   input9 <= 71
+|   |   |   |   |   |   |   input12 <= 45: 5 (12.0)
+|   |   |   |   |   |   |   input12 > 45: 9 (18.0/2.0)
+|   |   |   |   |   |   input9 > 71: 9 (69.0/1.0)
+|   input16 > 17
+|   |   input7 <= 24
+|   |   |   input8 <= 65
+|   |   |   |   input16 <= 63: 6 (69.0)
+|   |   |   |   input16 > 63: 0 (3.0)
+|   |   |   input8 > 65: 8 (4.0/1.0)
+|   |   input7 > 24
+|   |   |   input14 <= 13
+|   |   |   |   input15 <= 16
+|   |   |   |   |   input8 <= 64: 3 (5.0/1.0)
+|   |   |   |   |   input8 > 64: 9 (5.0)
+|   |   |   |   input15 > 16: 2 (7.0/2.0)
+|   |   |   input14 > 13
+|   |   |   |   input1 <= 54
+|   |   |   |   |   input16 <= 62: 7 (92.0/1.0)
+|   |   |   |   |   input16 > 62: 8 (8.0/1.0)
+|   |   |   |   input1 > 54
+|   |   |   |   |   input14 <= 27: 6 (3.0/1.0)
+|   |   |   |   |   input14 > 27: 8 (14.0)
+input14 > 53
+|   input9 <= 59
+|   |   input15 <= 96
+|   |   |   input5 <= 24
+|   |   |   |   input13 <= 93: 8 (6.0/1.0)
+|   |   |   |   input13 > 93: 0 (4.0)
+|   |   |   input5 > 24: 8 (45.0)
+|   |   input15 > 96
+|   |   |   input4 <= 86: 5 (66.0)
+|   |   |   input4 > 86
+|   |   |   |   input16 <= 68: 7 (6.0)
+|   |   |   |   input16 > 68: 8 (15.0)
+|   input9 > 59
+|   |   input11 <= 39: 8 (8.0/2.0)
+|   |   input11 > 39: 0 (111.0)
+
+Number of Leaves  : 	41
+
+Size of the tree : 	81
+
+
+Time taken to build model: 0.15 seconds
+Time taken to test model on training data: 0.07 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        2039               92.7662 %
+Incorrectly Classified Instances       159                7.2338 %
+Kappa statistic                          0.9196
+Mean absolute error                      0.0511
+Root mean squared error                  0.1297
+Relative absolute error                 28.4073 %
+Root relative squared error             43.2548 %
+Total Number of Instances             2198     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 234   0   0   0   0   0   0   0   2   0 |   a = 0
+   0 184  30   1   1   0   0   3   0   5 |   b = 1
+   0   9 229   0   0   1   1   0   0   0 |   c = 2
+   0   1   0 188   2   1   0   4   0   0 |   d = 3
+   0   0   0   0 202   0   1   0   0   5 |   e = 4
+   0   1   0  12   4 185   0   0   3  12 |   f = 5
+   1   1   0   0   3   0 194   0   5   0 |   g = 6
+   1   0   1   0   0   0   2 229   1   2 |   h = 7
+   4   0   2   0   0   0   3   6 183   3 |   i = 8
+   3   1   0   3   9   7   0   0   2 211 |   j = 9
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        2972               90.1152 %
+Incorrectly Classified Instances       326                9.8848 %
+Kappa statistic                          0.8901
+Mean absolute error                      0.0542
+Root mean squared error                  0.1414
+Relative absolute error                 30.0859 %
+Root relative squared error             47.1131 %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 329   0   0   0   0   0   0   0   7   1 |   a = 0
+   0 298  47   4   4   0   0   6   0   7 |   b = 1
+   0  12 312   0   0   2   0   4   0   0 |   c = 2
+   0   0   1 290   4   9   0   5   0   5 |   d = 3
+   0   1   0   0 344   0   3   1   0  10 |   e = 4
+   0   1   0  22   3 249   2   0  16  18 |   f = 5
+   0   3   0   0   7   0 292   0  17   0 |   g = 6
+   0   7   5   0   0   0   2 327   1   2 |   h = 7
+  16   0   4   0   0   4   4   7 286   3 |   i = 8
+   9   2   0  11  13  10   0   1   3 245 |   j = 9
+
