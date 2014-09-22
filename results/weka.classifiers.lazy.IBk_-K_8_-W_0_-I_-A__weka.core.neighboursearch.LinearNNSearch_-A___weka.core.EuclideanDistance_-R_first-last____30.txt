@@ -1,0 +1,63 @@
+
+Options: -K 8 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last"" 
+
+IB1 instance-based classifier
+using 8 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 1.65 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3298              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0003
+Root mean squared error                  0.003 
+Relative absolute error                  0.1505 %
+Root relative squared error              0.9865 %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 349   0   0   0   0   0   0   0   0   0 |   a = 0
+   0 333   0   0   0   0   0   0   0   0 |   b = 1
+   0   0 367   0   0   0   0   0   0   0 |   c = 2
+   0   0   0 296   0   0   0   0   0   0 |   d = 3
+   0   0   0   0 311   0   0   0   0   0 |   e = 4
+   0   0   0   0   0 322   0   0   0   0 |   f = 5
+   0   0   0   0   0   0 316   0   0   0 |   g = 6
+   0   0   0   0   0   0   0 354   0   0 |   h = 7
+   0   0   0   0   0   0   0   0 308   0 |   i = 8
+   0   0   0   0   0   0   0   0   0 342 |   j = 9
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        3254               98.6659 %
+Incorrectly Classified Instances        44                1.3341 %
+Kappa statistic                          0.9852
+Mean absolute error                      0.0048
+Root mean squared error                  0.0483
+Relative absolute error                  2.674  %
+Root relative squared error             16.0947 %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 334   0   0   0   2   0   1   0   0   0 |   a = 0
+   0 347   9   7   1   0   1   1   0   0 |   b = 1
+   0   3 327   0   0   0   0   0   0   0 |   c = 2
+   0   0   0 311   0   1   0   1   0   1 |   d = 3
+   0   0   0   0 358   0   1   0   0   0 |   e = 4
+   0   0   0   0   0 310   0   0   1   0 |   f = 5
+   0   0   0   0   0   0 319   0   0   0 |   g = 6
+   0   1   1   0   0   0   0 342   0   0 |   h = 7
+   0   0   0   0   0   0   0   2 322   0 |   i = 8
+   0   0   0   0   2   2   0   5   1 284 |   j = 9
+

@@ -1,0 +1,63 @@
+
+Options: -K 4 -W 0 -F -A "weka.core.neighboursearch.KDTree -A "weka.core.EuclideanDistance -R first-last" -S weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide -W 0.01 -L 40 -N" 
+
+IB1 instance-based classifier
+using 4 similarity-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.16 seconds
+Time taken to test model on training data: 0.27 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        2188               99.545  %
+Incorrectly Classified Instances        10                0.455  %
+Kappa statistic                          0.9949
+Mean absolute error                      0.0026
+Root mean squared error                  0.0319
+Relative absolute error                  1.4679 %
+Root relative squared error             10.6435 %
+Total Number of Instances             2198     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 236   0   0   0   0   0   0   0   0   0 |   a = 0
+   0 220   2   2   0   0   0   0   0   0 |   b = 1
+   0   0 240   0   0   0   0   0   0   0 |   c = 2
+   0   0   0 196   0   0   0   0   0   0 |   d = 3
+   0   0   0   0 206   2   0   0   0   0 |   e = 4
+   0   0   0   0   0 217   0   0   0   0 |   f = 5
+   0   0   0   0   0   0 204   0   0   0 |   g = 6
+   0   0   0   0   0   0   0 236   0   0 |   h = 7
+   0   0   0   0   0   1   0   0 200   0 |   i = 8
+   0   0   0   0   1   2   0   0   0 233 |   j = 9
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        3256               98.7265 %
+Incorrectly Classified Instances        42                1.2735 %
+Kappa statistic                          0.9858
+Mean absolute error                      0.0046
+Root mean squared error                  0.0502
+Relative absolute error                  2.5631 %
+Root relative squared error             16.7274 %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 334   0   0   0   2   0   1   0   0   0 |   a = 0
+   0 349   9   7   1   0   0   0   0   0 |   b = 1
+   0   2 328   0   0   0   0   0   0   0 |   c = 2
+   0   0   0 311   0   1   0   1   0   1 |   d = 3
+   0   0   0   0 357   0   1   0   0   1 |   e = 4
+   0   0   0   0   0 309   0   0   1   1 |   f = 5
+   0   0   0   0   0   0 319   0   0   0 |   g = 6
+   0   1   1   0   0   0   0 342   0   0 |   h = 7
+   0   0   0   1   0   1   0   2 320   0 |   i = 8
+   0   1   0   0   1   0   0   4   1 287 |   j = 9
+

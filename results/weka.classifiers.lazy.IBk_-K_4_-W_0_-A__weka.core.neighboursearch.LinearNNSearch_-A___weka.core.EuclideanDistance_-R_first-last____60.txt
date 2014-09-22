@@ -1,0 +1,63 @@
+
+Options: -K 4 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last"" 
+
+IB1 instance-based classifier
+using 4 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 4.83 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        6566               99.5603 %
+Incorrectly Classified Instances        29                0.4397 %
+Kappa statistic                          0.9951
+Mean absolute error                      0.0015
+Root mean squared error                  0.0259
+Relative absolute error                  0.817  %
+Root relative squared error              8.6232 %
+Total Number of Instances             6595     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 680   1   0   0   1   0   0   0   0   1 |   a = 0
+   0 668   3   3   1   0   0   0   0   0 |   b = 1
+   0   2 699   0   0   0   0   0   0   0 |   c = 2
+   0   0   1 636   1   0   0   1   0   0 |   d = 3
+   0   0   0   0 663   1   0   0   0   1 |   e = 4
+   0   0   0   2   0 626   0   0   1   0 |   f = 5
+   0   0   0   0   0   1 626   0   0   0 |   g = 6
+   0   2   0   0   0   0   0 692   0   0 |   h = 7
+   0   0   0   0   0   1   0   1 620   0 |   i = 8
+   0   0   0   0   1   3   0   0   0 656 |   j = 9
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        3266               99.0297 %
+Incorrectly Classified Instances        32                0.9703 %
+Kappa statistic                          0.9892
+Mean absolute error                      0.0026
+Root mean squared error                  0.0393
+Relative absolute error                  1.4441 %
+Root relative squared error             13.0918 %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 336   0   0   0   1   0   0   0   0   0 |   a = 0
+   0 357   5   4   0   0   0   0   0   0 |   b = 1
+   0   3 326   0   0   0   0   1   0   0 |   c = 2
+   0   0   1 311   0   1   0   0   0   1 |   d = 3
+   0   0   0   0 359   0   0   0   0   0 |   e = 4
+   0   0   0   0   0 311   0   0   0   0 |   f = 5
+   0   0   0   0   0   0 319   0   0   0 |   g = 6
+   0   1   2   0   0   0   0 341   0   0 |   h = 7
+   0   0   0   0   0   0   0   3 321   0 |   i = 8
+   0   1   0   0   2   1   0   4   1 285 |   j = 9
+
