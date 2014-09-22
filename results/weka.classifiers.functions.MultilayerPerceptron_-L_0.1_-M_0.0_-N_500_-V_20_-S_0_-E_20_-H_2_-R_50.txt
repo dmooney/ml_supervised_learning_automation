@@ -1,0 +1,179 @@
+
+Options: -L 0.1 -M 0.0 -N 500 -V 20 -S 0 -E 20 -H 2 -R 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    3.1249688564590423
+    Node 10    -6.603640711125772
+    Node 11    -31.04268062981042
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.464483783734645
+    Node 10    1.4425763685823245
+    Node 11    0.8688309945534721
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -35.527217752668975
+    Node 10    7.036258118180671
+    Node 11    32.66623080996733
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -35.837049486173
+    Node 10    32.50637985392605
+    Node 11    8.200398427566618
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.2889086521127284
+    Node 10    3.2132449330349204
+    Node 11    -18.910275790083507
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    1.2896252866686655
+    Node 10    -45.484755880118854
+    Node 11    0.7098195583102969
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -2.125739561914979
+    Node 10    0.7806080453250029
+    Node 11    -2.015501449936053
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -19.041465114073528
+    Node 10    -16.453170018009345
+    Node 11    27.076796012283616
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.7275075575729288
+    Node 10    -3.060647272130713
+    Node 11    -0.0798374573865815
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -26.688705475765182
+    Node 10    29.50474345302216
+    Node 11    -8.780828068658948
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.3459068182297218
+    Attrib input1    0.3334636800042424
+    Attrib input2    -0.702286493688194
+    Attrib input3    0.006847139998695845
+    Attrib input4    1.5982493602397647
+    Attrib input5    0.45521258746960824
+    Attrib input6    -1.3531017912799486
+    Attrib input7    -0.2445230455686379
+    Attrib input8    1.0601842370754562
+    Attrib input9    0.07523222776408152
+    Attrib input10    0.03353809274734283
+    Attrib input11    0.28669735292117565
+    Attrib input12    0.6967942888992815
+    Attrib input13    0.7987045892297329
+    Attrib input14    -2.072121338284758
+    Attrib input15    -0.7210859334093546
+    Attrib input16    -0.8397468762440744
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.9831811134380182
+    Attrib input1    -0.8375362525773441
+    Attrib input2    -1.3318980703887486
+    Attrib input3    -0.09792095946237747
+    Attrib input4    2.619289502781375
+    Attrib input5    1.8182137233015585
+    Attrib input6    -0.7188595104322593
+    Attrib input7    -0.17025400459807716
+    Attrib input8    -0.9483577197995415
+    Attrib input9    -0.3764753920006277
+    Attrib input10    0.7909306672381917
+    Attrib input11    -1.2083958264698573
+    Attrib input12    -2.2420297864543115
+    Attrib input13    0.24617984309656415
+    Attrib input14    -0.040825632047592375
+    Attrib input15    0.1479658568949537
+    Attrib input16    -0.6319108148400167
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+Class 2
+    Input
+    Node 2
+Class 3
+    Input
+    Node 3
+Class 4
+    Input
+    Node 4
+Class 5
+    Input
+    Node 5
+Class 6
+    Input
+    Node 6
+Class 7
+    Input
+    Node 7
+Class 8
+    Input
+    Node 8
+Class 9
+    Input
+    Node 9
+
+
+Time taken to build model: 11.77 seconds
+Time taken to test model on training data: 0.16 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        3967               72.1798 %
+Incorrectly Classified Instances      1529               27.8202 %
+Kappa statistic                          0.6907
+Mean absolute error                      0.1048
+Root mean squared error                  0.213 
+Relative absolute error                 58.21   %
+Root relative squared error             71.021  %
+Total Number of Instances             5496     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 539   9   1   0   7   0   2   0  10   1 |   a = 0
+   0 192 163  75  20   0  80   8   8  23 |   b = 1
+   0   9 577   1   0   0   0   2   1   0 |   c = 2
+   0   2   1 521   0   0   0   0   0   1 |   d = 3
+   1   6   0   0 500   0  27   0   0  11 |   e = 4
+   7   1   0  87   2 292   0   3   0 135 |   f = 5
+  10 119   2   9 252   1 127   0   0   8 |   g = 6
+   0  79  20   4  17   0  10 434   4   2 |   h = 7
+  79  33  10  15   0  42   0  16 322   1 |   i = 8
+   7  20   0   7  44   0  11   0   3 463 |   j = 9
+
+
+=== Error on test data ===
+
+Correctly Classified Instances        2411               73.1049 %
+Incorrectly Classified Instances       887               26.8951 %
+Kappa statistic                          0.7009
+Mean absolute error                      0.1041
+Root mean squared error                  0.2113
+Relative absolute error                 57.8299 %
+Root relative squared error             70.4236 %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 326   5   0   0   2   0   1   0   3   0 |   a = 0
+   0 145  92  33  16   0  50   2   9  19 |   b = 1
+   0   5 323   0   0   0   0   2   0   0 |   c = 2
+   0   2   0 311   0   0   0   0   0   1 |   d = 3
+   0   5   0   0 328   0  17   0   0   9 |   e = 4
+   3   1   0  43   0 187   1   0   0  76 |   f = 5
+   8  58   0  12 151   0  88   0   0   2 |   g = 6
+   0  45  12   2   3   0   5 272   4   1 |   h = 7
+  56  11   4   9   0  24   1  10 208   1 |   i = 8
+   9   9   0   1  42   1   8   0   1 223 |   j = 9
+

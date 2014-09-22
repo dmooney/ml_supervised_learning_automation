@@ -1,0 +1,150 @@
+
+Options: -L 1.0 -M 0.0 -N 100 -V 0 -S 0 -E 20 -H 1 -R -D 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    1.3482635415904667
+    Node 10    -10.449486034848489
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.656269096966143
+    Node 10    2.660248121569606
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -5.74466530002348
+    Node 10    6.366860803709523
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.93944016383137
+    Node 10    0.9936850278680163
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.8251181871792819
+    Node 10    -0.8775925800488503
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.912673308904218
+    Node 10    -0.6905658991209976
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -2.024308824699686
+    Node 10    -0.7395832498424119
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -3.374618574294535
+    Node 10    2.2019498320062985
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.6005438982839562
+    Node 10    -1.3784077490678261
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.869038632866518
+    Node 10    -0.29937805054302363
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.6510325764324801
+    Attrib input1    0.012617510292798203
+    Attrib input2    -0.5984318823696512
+    Attrib input3    -0.1926876399081622
+    Attrib input4    0.6845795696857424
+    Attrib input5    0.46300541004357476
+    Attrib input6    0.01852409849161067
+    Attrib input7    0.13514197721767882
+    Attrib input8    -0.28525628129713754
+    Attrib input9    -0.5161421916060783
+    Attrib input10    0.19018562645955117
+    Attrib input11    -0.6229586240883832
+    Attrib input12    -0.46524513080446556
+    Attrib input13    0.44522866926028926
+    Attrib input14    -0.14662330983203473
+    Attrib input15    0.376538610270975
+    Attrib input16    -1.2129311213464675
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+Class 2
+    Input
+    Node 2
+Class 3
+    Input
+    Node 3
+Class 4
+    Input
+    Node 4
+Class 5
+    Input
+    Node 5
+Class 6
+    Input
+    Node 6
+Class 7
+    Input
+    Node 7
+Class 8
+    Input
+    Node 8
+Class 9
+    Input
+    Node 9
+
+
+Time taken to build model: 0.48 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         351               31.9381 %
+Incorrectly Classified Instances       748               68.0619 %
+Kappa statistic                          0.2291
+Mean absolute error                      0.1625
+Root mean squared error                  0.2781
+Relative absolute error                 90.435  %
+Root relative squared error             92.7805 %
+Total Number of Instances             1099     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 121   0   1   0   0   0   0   0   0   2 |   a = 0
+   0   0  94   0   0   0   0   0   0  10 |   b = 1
+   0   0 131   0   0   0   0   0   0   0 |   c = 2
+   0   0  36   0   0   0   0   0   0  60 |   d = 3
+  36   0   9   0   0   0   0   0   0  59 |   e = 4
+  39   0   9   0   0   0   0   0   0  56 |   f = 5
+  39   0  15   0   0   0   0   0   0  38 |   g = 6
+   0   0  93   0   0   0   0   0   0  19 |   h = 7
+  52   0  10   0   0   0   0   0   0  40 |   i = 8
+  19   0  12   0   0   0   0   0   0  99 |   j = 9
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         885               26.8344 %
+Incorrectly Classified Instances      2413               73.1656 %
+Kappa statistic                          0.19  
+Mean absolute error                      0.1644
+Root mean squared error                  0.2811
+Relative absolute error                 91.3416 %
+Root relative squared error             93.6232 %
+Total Number of Instances             3298     
+
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 330   0   6   0   0   0   0   0   0   1 |   a = 0
+   0   0 300   0   0   0   0   0   0  66 |   b = 1
+   0   0 330   0   0   0   0   0   0   0 |   c = 2
+   0   0 108   0   0   0   0   0   0 206 |   d = 3
+ 107   0  19   0   0   0   0   0   0 233 |   e = 4
+ 137   0  23   0   0   0   0   0   0 151 |   f = 5
+ 134   0  48   0   0   0   0   0   0 137 |   g = 6
+   7   0 300   0   0   0   0   0   0  37 |   h = 7
+ 168   0  33   0   0   0   0   0   0 123 |   i = 8
+  49   0  20   0   0   0   0   0   0 225 |   j = 9
+
