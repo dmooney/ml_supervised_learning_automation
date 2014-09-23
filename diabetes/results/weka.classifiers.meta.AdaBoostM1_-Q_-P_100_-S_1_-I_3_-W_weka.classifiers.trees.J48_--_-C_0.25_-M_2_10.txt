@@ -1,0 +1,121 @@
+
+Options: -Q -P 100 -S 1 -I 3 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+plas <= 114
+|   preg <= 8: tested_negative (29.0/2.0)
+|   preg > 8: tested_positive (7.0/1.0)
+plas > 114
+|   preg <= 3
+|   |   pres <= 90: tested_negative (11.0/2.0)
+|   |   pres > 90: tested_positive (2.0)
+|   preg > 3: tested_positive (28.0/1.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Weight: 1.5
+
+J48 pruned tree
+------------------
+
+plas <= 146
+|   mass <= 27.3: tested_negative (12.0)
+|   mass > 27.3
+|   |   plas <= 75: tested_negative (7.0)
+|   |   plas > 75
+|   |   |   preg <= 6
+|   |   |   |   insu <= 96
+|   |   |   |   |   insu <= 63
+|   |   |   |   |   |   mass <= 32.4
+|   |   |   |   |   |   |   pres <= 72: tested_positive (2.0)
+|   |   |   |   |   |   |   pres > 72: tested_negative (2.0)
+|   |   |   |   |   |   mass > 32.4: tested_negative (8.0)
+|   |   |   |   |   insu > 63
+|   |   |   |   |   |   pedi <= 0.496
+|   |   |   |   |   |   |   plas <= 90: tested_positive (4.0)
+|   |   |   |   |   |   |   plas > 90: tested_negative (2.0)
+|   |   |   |   |   |   pedi > 0.496: tested_positive (6.0)
+|   |   |   |   insu > 96: tested_negative (10.0)
+|   |   |   preg > 6: tested_positive (7.0)
+plas > 146: tested_positive (17.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+
+Weight: 2.45
+
+J48 pruned tree
+------------------
+
+pedi <= 0.485
+|   age <= 57
+|   |   pres <= 50: tested_positive (4.0)
+|   |   pres > 50
+|   |   |   mass <= 52.3
+|   |   |   |   preg <= 6: tested_negative (23.0)
+|   |   |   |   preg > 6
+|   |   |   |   |   plas <= 95: tested_negative (11.0)
+|   |   |   |   |   plas > 95: tested_positive (5.0)
+|   |   |   mass > 52.3: tested_positive (3.0)
+|   age > 57: tested_positive (5.0)
+pedi > 0.485: tested_positive (26.0/1.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.18
+
+Number of performed Iterations: 3
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          76               98.7013 %
+Incorrectly Classified Instances         1                1.2987 %
+Kappa statistic                          0.9731
+Mean absolute error                      0.0832
+Root mean squared error                  0.141 
+Relative absolute error                 17.1098 %
+Root relative squared error             28.6141 %
+Total Number of Instances               77     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 45  0 |  a = tested_negative
+  1 31 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         161               70      %
+Incorrectly Classified Instances        69               30      %
+Kappa statistic                          0.3629
+Mean absolute error                      0.325 
+Root mean squared error                  0.5085
+Relative absolute error                 68.4195 %
+Root relative squared error            105.6308 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 109  41 |   a = tested_negative
+  28  52 |   b = tested_positive
+

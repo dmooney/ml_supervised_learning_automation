@@ -2,4 +2,4 @@
 
 set -e
 
-for f in `ls ../results`; do grep -H 'Correctly Classified' ../results/$f|tail -n1|sed 's/\:/ /'; done | awk '{print $6, $1}' | sort
+for f in `ls ../diabetes/results`; do grep -H 'Correctly Classified' ../diabetes/results/$f | tail -n1 | sed 's/\:/ /'; done | awk '{print $6, $1}' | sort

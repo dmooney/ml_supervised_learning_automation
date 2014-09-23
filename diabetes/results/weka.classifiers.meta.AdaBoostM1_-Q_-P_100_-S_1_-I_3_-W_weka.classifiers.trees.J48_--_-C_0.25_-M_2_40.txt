@@ -1,0 +1,223 @@
+
+Options: -Q -P 100 -S 1 -I 3 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+preg <= 10
+|   plas <= 112: tested_negative (128.0/8.0)
+|   plas > 112
+|   |   plas <= 153
+|   |   |   plas <= 121
+|   |   |   |   pres <= 68
+|   |   |   |   |   mass <= 24.8: tested_negative (3.0/1.0)
+|   |   |   |   |   mass > 24.8: tested_positive (11.0)
+|   |   |   |   pres > 68
+|   |   |   |   |   preg <= 2: tested_negative (7.0)
+|   |   |   |   |   preg > 2
+|   |   |   |   |   |   age <= 38: tested_positive (2.0)
+|   |   |   |   |   |   age > 38: tested_negative (3.0/1.0)
+|   |   |   plas > 121
+|   |   |   |   pres <= 88
+|   |   |   |   |   insu <= 94
+|   |   |   |   |   |   insu <= 68
+|   |   |   |   |   |   |   pres <= 72
+|   |   |   |   |   |   |   |   plas <= 129: tested_negative (6.0)
+|   |   |   |   |   |   |   |   plas > 129
+|   |   |   |   |   |   |   |   |   pedi <= 0.227: tested_negative (2.0)
+|   |   |   |   |   |   |   |   |   pedi > 0.227: tested_positive (8.0)
+|   |   |   |   |   |   |   pres > 72
+|   |   |   |   |   |   |   |   mass <= 32.4: tested_negative (19.0)
+|   |   |   |   |   |   |   |   mass > 32.4
+|   |   |   |   |   |   |   |   |   mass <= 39.1: tested_positive (5.0/1.0)
+|   |   |   |   |   |   |   |   |   mass > 39.1: tested_negative (6.0)
+|   |   |   |   |   |   insu > 68: tested_positive (4.0/1.0)
+|   |   |   |   |   insu > 94: tested_negative (28.0/1.0)
+|   |   |   |   pres > 88
+|   |   |   |   |   insu <= 23: tested_negative (3.0/1.0)
+|   |   |   |   |   insu > 23: tested_positive (5.0)
+|   |   plas > 153
+|   |   |   age <= 58
+|   |   |   |   pedi <= 0.361
+|   |   |   |   |   pres <= 84: tested_negative (4.0)
+|   |   |   |   |   pres > 84: tested_positive (6.0)
+|   |   |   |   pedi > 0.361: tested_positive (25.0)
+|   |   |   age > 58: tested_negative (3.0)
+preg > 10
+|   age <= 55: tested_positive (27.0)
+|   age > 55: tested_negative (2.0)
+
+Number of Leaves  : 	22
+
+Size of the tree : 	43
+
+
+Weight: 1.59
+
+J48 pruned tree
+------------------
+
+mass <= 26.2
+|   plas <= 114: tested_negative (35.0)
+|   plas > 114
+|   |   preg <= 9
+|   |   |   plas <= 151: tested_negative (13.0)
+|   |   |   plas > 151: tested_positive (6.0/1.0)
+|   |   preg > 9: tested_positive (4.0)
+mass > 26.2
+|   preg <= 5
+|   |   insu <= 474
+|   |   |   plas <= 154
+|   |   |   |   pedi <= 0.194: tested_negative (11.0)
+|   |   |   |   pedi > 0.194
+|   |   |   |   |   skin <= 28
+|   |   |   |   |   |   skin <= 0
+|   |   |   |   |   |   |   plas <= 98: tested_negative (3.0)
+|   |   |   |   |   |   |   plas > 98: tested_positive (13.0)
+|   |   |   |   |   |   skin > 0
+|   |   |   |   |   |   |   age <= 41: tested_negative (33.0)
+|   |   |   |   |   |   |   age > 41
+|   |   |   |   |   |   |   |   pedi <= 0.239: tested_positive (4.0)
+|   |   |   |   |   |   |   |   pedi > 0.239: tested_negative (3.0)
+|   |   |   |   |   skin > 28
+|   |   |   |   |   |   pedi <= 0.626
+|   |   |   |   |   |   |   plas <= 88: tested_positive (8.0)
+|   |   |   |   |   |   |   plas > 88
+|   |   |   |   |   |   |   |   plas <= 103: tested_negative (8.0)
+|   |   |   |   |   |   |   |   plas > 103
+|   |   |   |   |   |   |   |   |   insu <= 160
+|   |   |   |   |   |   |   |   |   |   mass <= 30: tested_negative (2.0)
+|   |   |   |   |   |   |   |   |   |   mass > 30
+|   |   |   |   |   |   |   |   |   |   |   pedi <= 0.575: tested_positive (17.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   pedi > 0.575: tested_negative (2.0)
+|   |   |   |   |   |   |   |   |   insu > 160: tested_negative (8.0/1.0)
+|   |   |   |   |   |   pedi > 0.626
+|   |   |   |   |   |   |   age <= 28
+|   |   |   |   |   |   |   |   preg <= 1: tested_positive (7.0)
+|   |   |   |   |   |   |   |   preg > 1: tested_negative (2.0)
+|   |   |   |   |   |   |   age > 28: tested_positive (11.0)
+|   |   |   plas > 154: tested_positive (26.0/1.0)
+|   |   insu > 474: tested_negative (10.0)
+|   preg > 5
+|   |   plas <= 106
+|   |   |   skin <= 11: tested_negative (11.0)
+|   |   |   skin > 11
+|   |   |   |   insu <= 23: tested_positive (10.0)
+|   |   |   |   insu > 23: tested_negative (4.0/1.0)
+|   |   plas > 106: tested_positive (56.0/2.0)
+
+Number of Leaves  : 	25
+
+Size of the tree : 	49
+
+
+Weight: 2.0
+
+J48 pruned tree
+------------------
+
+plas <= 87
+|   insu <= 79: tested_negative (31.0)
+|   insu > 79: tested_positive (5.0)
+plas > 87
+|   mass <= 34.8
+|   |   pres <= 78
+|   |   |   pedi <= 0.303
+|   |   |   |   mass <= 28.7: tested_negative (25.0/2.0)
+|   |   |   |   mass > 28.7
+|   |   |   |   |   pedi <= 0.225: tested_positive (15.0/1.0)
+|   |   |   |   |   pedi > 0.225
+|   |   |   |   |   |   mass <= 30: tested_positive (3.0)
+|   |   |   |   |   |   mass > 30: tested_negative (20.0)
+|   |   |   pedi > 0.303
+|   |   |   |   pedi <= 0.926
+|   |   |   |   |   pres <= 52: tested_negative (2.0)
+|   |   |   |   |   pres > 52
+|   |   |   |   |   |   age <= 52
+|   |   |   |   |   |   |   skin <= 11: tested_positive (17.0)
+|   |   |   |   |   |   |   skin > 11
+|   |   |   |   |   |   |   |   pres <= 61: tested_negative (2.0)
+|   |   |   |   |   |   |   |   pres > 61
+|   |   |   |   |   |   |   |   |   age <= 36: tested_positive (19.0)
+|   |   |   |   |   |   |   |   |   age > 36
+|   |   |   |   |   |   |   |   |   |   age <= 45: tested_negative (2.0)
+|   |   |   |   |   |   |   |   |   |   age > 45: tested_positive (4.0)
+|   |   |   |   |   |   age > 52: tested_negative (2.0)
+|   |   |   |   pedi > 0.926: tested_negative (4.0)
+|   |   pres > 78
+|   |   |   pedi <= 0.654: tested_negative (32.0/2.0)
+|   |   |   pedi > 0.654
+|   |   |   |   pres <= 80: tested_negative (10.0/1.0)
+|   |   |   |   pres > 80: tested_positive (7.0)
+|   mass > 34.8
+|   |   skin <= 46
+|   |   |   age <= 23
+|   |   |   |   plas <= 167: tested_negative (5.0)
+|   |   |   |   plas > 167: tested_positive (2.0)
+|   |   |   age > 23
+|   |   |   |   plas <= 133
+|   |   |   |   |   plas <= 96: tested_positive (26.0/1.0)
+|   |   |   |   |   plas > 96
+|   |   |   |   |   |   age <= 42
+|   |   |   |   |   |   |   mass <= 36.6: tested_positive (6.0/1.0)
+|   |   |   |   |   |   |   mass > 36.6
+|   |   |   |   |   |   |   |   pres <= 88: tested_negative (14.0)
+|   |   |   |   |   |   |   |   pres > 88: tested_positive (2.0)
+|   |   |   |   |   |   age > 42: tested_positive (8.0)
+|   |   |   |   plas > 133
+|   |   |   |   |   pedi <= 1.282: tested_positive (34.0)
+|   |   |   |   |   pedi > 1.282: tested_negative (3.0/1.0)
+|   |   skin > 46: tested_negative (7.0)
+
+Number of Leaves  : 	27
+
+Size of the tree : 	53
+
+
+Weight: 1.93
+
+Number of performed Iterations: 3
+
+
+Time taken to build model: 0.31 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         293               95.4397 %
+Incorrectly Classified Instances        14                4.5603 %
+Kappa statistic                          0.8987
+Mean absolute error                      0.1034
+Root mean squared error                  0.2067
+Relative absolute error                 22.6669 %
+Root relative squared error             43.279  %
+Total Number of Instances              307     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 195   4 |   a = tested_negative
+  10  98 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         153               66.5217 %
+Incorrectly Classified Instances        77               33.4783 %
+Kappa statistic                          0.2727
+Mean absolute error                      0.35  
+Root mean squared error                  0.5218
+Relative absolute error                 76.8974 %
+Root relative squared error            109.5605 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 109  41 |   a = tested_negative
+  36  44 |   b = tested_positive
+

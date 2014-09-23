@@ -1,0 +1,70 @@
+
+Options: -C 0.1 -M 2 -A 
+
+J48 pruned tree
+------------------
+
+mass <= 25.4: tested_negative (27.0/1.0)
+mass > 25.4
+|   age <= 24: tested_negative (38.0/7.0)
+|   age > 24
+|   |   plas <= 101
+|   |   |   preg <= 11: tested_negative (21.0/3.0)
+|   |   |   preg > 11: tested_positive (2.0)
+|   |   plas > 101
+|   |   |   pedi <= 0.551
+|   |   |   |   mass <= 34.9
+|   |   |   |   |   insu <= 155: tested_negative (25.0/8.0)
+|   |   |   |   |   insu > 155: tested_positive (3.0)
+|   |   |   |   mass > 34.9
+|   |   |   |   |   insu <= 155: tested_positive (9.0)
+|   |   |   |   |   insu > 155: tested_negative (3.0/1.0)
+|   |   |   pedi > 0.551
+|   |   |   |   insu <= 271: tested_positive (24.0)
+|   |   |   |   insu > 271: tested_negative (2.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.12 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         134               87.013  %
+Incorrectly Classified Instances        20               12.987  %
+Kappa statistic                          0.7032
+Mean absolute error                      0.2329
+Root mean squared error                  0.3214
+Relative absolute error                 49.5692 %
+Root relative squared error             66.3278 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 96  0 |  a = tested_negative
+ 20 38 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         149               64.7826 %
+Incorrectly Classified Instances        81               35.2174 %
+Kappa statistic                          0.1882
+Mean absolute error                      0.3907
+Root mean squared error                  0.5129
+Relative absolute error                 84.3862 %
+Root relative squared error            107.4795 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 117  33 |   a = tested_negative
+  48  32 |   b = tested_positive
+

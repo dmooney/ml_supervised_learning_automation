@@ -1,0 +1,78 @@
+
+Options: -C 0.5 -M 4 -A 
+
+J48 pruned tree
+------------------
+
+plas <= 154
+|   mass <= 26.4: tested_negative (80.0/3.0)
+|   mass > 26.4
+|   |   age <= 28
+|   |   |   skin <= 0
+|   |   |   |   plas <= 110: tested_negative (9.0)
+|   |   |   |   plas > 110: tested_positive (11.0/3.0)
+|   |   |   skin > 0: tested_negative (91.0/12.0)
+|   |   age > 28
+|   |   |   plas <= 99
+|   |   |   |   age <= 42: tested_negative (21.0)
+|   |   |   |   age > 42
+|   |   |   |   |   preg <= 6: tested_negative (4.0/1.0)
+|   |   |   |   |   preg > 6: tested_positive (4.0/1.0)
+|   |   |   plas > 99
+|   |   |   |   pedi <= 0.52: tested_negative (66.0/33.0)
+|   |   |   |   pedi > 0.52
+|   |   |   |   |   skin <= 21
+|   |   |   |   |   |   preg <= 7: tested_negative (8.0/3.0)
+|   |   |   |   |   |   preg > 7: tested_positive (4.0/1.0)
+|   |   |   |   |   skin > 21: tested_positive (24.0/1.0)
+plas > 154
+|   pedi <= 0.306
+|   |   pres <= 74: tested_negative (8.0/1.0)
+|   |   pres > 74: tested_positive (5.0)
+|   pedi > 0.306: tested_positive (49.0/5.0)
+
+Number of Leaves  : 	14
+
+Size of the tree : 	27
+
+
+Time taken to build model: 0.2 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         320               83.3333 %
+Incorrectly Classified Instances        64               16.6667 %
+Kappa statistic                          0.6139
+Mean absolute error                      0.2376
+Root mean squared error                  0.3341
+Relative absolute error                 51.4185 %
+Root relative squared error             69.515  %
+Total Number of Instances              384     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 234  11 |   a = tested_negative
+  53  86 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         173               75.2174 %
+Incorrectly Classified Instances        57               24.7826 %
+Kappa statistic                          0.4108
+Mean absolute error                      0.3186
+Root mean squared error                  0.4337
+Relative absolute error                 69.539  %
+Root relative squared error             91.0206 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 134  16 |   a = tested_negative
+  41  39 |   b = tested_positive
+

@@ -1,0 +1,161 @@
+
+Options: -L 0.3 -M 0.2 -N 500 -V 20 -S 0 -E 20 -H i -R -D 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.5620422746969542
+    Node 2    -0.35358622083198965
+    Node 3    1.9319375096499385
+    Node 4    0.5352674176137506
+    Node 5    0.5538271730697718
+    Node 6    0.3310366821364942
+    Node 7    1.1236741015323557
+    Node 8    -0.8211915225365198
+    Node 9    1.5050267542635467
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.5418245966238093
+    Node 2    0.3882092513607263
+    Node 3    -1.9378763776015036
+    Node 4    -0.5885603270647626
+    Node 5    -0.5054706358390092
+    Node 6    -0.309466253404036
+    Node 7    -1.0894961288299316
+    Node 8    0.8207505330337808
+    Node 9    -1.5434843592020189
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.022653432542545617
+    Attrib preg    -0.02498298417266977
+    Attrib plas    0.06729804153146994
+    Attrib pres    -0.03997743613354366
+    Attrib skin    0.07190962794232893
+    Attrib insu    -0.0035999139185807533
+    Attrib mass    0.012920020754376984
+    Attrib pedi    0.06657693822282522
+    Attrib age    -0.09236920980205333
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.5154278487126113
+    Attrib preg    -0.9676036437607513
+    Attrib plas    -2.33811794968189
+    Attrib pres    -0.007731024644469222
+    Attrib skin    0.10313746607081238
+    Attrib insu    0.44125392365331284
+    Attrib mass    -1.127852418309454
+    Attrib pedi    -0.5696508075396933
+    Attrib age    -0.6347146575868599
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.2833031132597535
+    Attrib preg    -0.4274149250044388
+    Attrib plas    -1.004040899414412
+    Attrib pres    -0.0998016211268918
+    Attrib skin    0.04830658514446401
+    Attrib insu    0.2298499277896454
+    Attrib mass    -0.4252150273864114
+    Attrib pedi    -0.2015765108871595
+    Attrib age    -0.23773883954083164
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.2973936012527764
+    Attrib preg    -0.40610823086914716
+    Attrib plas    -0.9453914912302196
+    Attrib pres    -0.05523950208702733
+    Attrib skin    0.018759528750259765
+    Attrib insu    0.1498020531119151
+    Attrib mass    -0.4888601200635323
+    Attrib pedi    -0.15970840559539592
+    Attrib age    -0.23088210752060045
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.2129508740834376
+    Attrib preg    -0.3316361937518917
+    Attrib plas    -0.7371907386958413
+    Attrib pres    -0.059186096122623884
+    Attrib skin    0.037414329517427264
+    Attrib insu    0.16934160192232578
+    Attrib mass    -0.3112934289469824
+    Attrib pedi    -0.15530122896745402
+    Attrib age    -0.13825830824754592
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.38750021076250835
+    Attrib preg    -0.6587400960829816
+    Attrib plas    -1.5674207032900829
+    Attrib pres    -0.021388364186003362
+    Attrib skin    0.0313242287625159
+    Attrib insu    0.25679339433102044
+    Attrib mass    -0.7454704808193668
+    Attrib pedi    -0.3605438933808383
+    Attrib age    -0.33651072583880925
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    0.15381367858539624
+    Attrib preg    0.18741349243213917
+    Attrib plas    0.5512485494093123
+    Attrib pres    -0.06150554612175283
+    Attrib skin    0.04265633512955357
+    Attrib insu    -0.06331594574382832
+    Attrib mass    0.2980573771444965
+    Attrib pedi    0.13875561221457344
+    Attrib age    -0.03486988380651116
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.4885989076819722
+    Attrib preg    -0.8289804076912319
+    Attrib plas    -1.957220586028246
+    Attrib pres    -0.009230262210090396
+    Attrib skin    0.041047489168856886
+    Attrib insu    0.30961888140640875
+    Attrib mass    -0.9458276326903937
+    Attrib pedi    -0.5208151017290031
+    Attrib age    -0.44184465325777383
+Class tested_negative
+    Input
+    Node 0
+Class tested_positive
+    Input
+    Node 1
+
+
+Time taken to build model: 0.65 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         291               75.7813 %
+Incorrectly Classified Instances        93               24.2188 %
+Kappa statistic                          0.4473
+Mean absolute error                      0.3413
+Root mean squared error                  0.3986
+Relative absolute error                 73.8611 %
+Root relative squared error             82.9388 %
+Total Number of Instances              384     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 215  30 |   a = tested_negative
+  63  76 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         173               75.2174 %
+Incorrectly Classified Instances        57               24.7826 %
+Kappa statistic                          0.4356
+Mean absolute error                      0.3557
+Root mean squared error                  0.4132
+Relative absolute error                 77.6326 %
+Root relative squared error             86.7147 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 127  23 |   a = tested_negative
+  34  46 |   b = tested_positive
+

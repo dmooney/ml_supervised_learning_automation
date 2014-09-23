@@ -1,0 +1,68 @@
+
+Options: -C 0.25 -M 4 -A 
+
+J48 pruned tree
+------------------
+
+mass <= 25.4: tested_negative (27.0/1.0)
+mass > 25.4
+|   age <= 24: tested_negative (38.0/7.0)
+|   age > 24
+|   |   plas <= 101
+|   |   |   insu <= 85: tested_negative (17.0/1.0)
+|   |   |   insu > 85: tested_positive (6.0/2.0)
+|   |   plas > 101
+|   |   |   pedi <= 0.551
+|   |   |   |   mass <= 34.9
+|   |   |   |   |   pres <= 82
+|   |   |   |   |   |   insu <= 94: tested_negative (18.0/6.0)
+|   |   |   |   |   |   insu > 94: tested_positive (6.0/1.0)
+|   |   |   |   |   pres > 82: tested_negative (4.0)
+|   |   |   |   mass > 34.9: tested_positive (12.0/2.0)
+|   |   |   pedi > 0.551: tested_positive (26.0/2.0)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Time taken to build model: 0.14 seconds
+Time taken to test model on training data: 0.06 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         132               85.7143 %
+Incorrectly Classified Instances        22               14.2857 %
+Kappa statistic                          0.6872
+Mean absolute error                      0.2512
+Root mean squared error                  0.3379
+Relative absolute error                 53.4617 %
+Root relative squared error             69.7435 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 89  7 |  a = tested_negative
+ 15 43 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         156               67.8261 %
+Incorrectly Classified Instances        74               32.1739 %
+Kappa statistic                          0.3109
+Mean absolute error                      0.3677
+Root mean squared error                  0.4844
+Relative absolute error                 79.4376 %
+Root relative squared error            101.5027 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 108  42 |   a = tested_negative
+  32  48 |   b = tested_positive
+

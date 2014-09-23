@@ -1,0 +1,153 @@
+
+Options: -Q -P 100 -S 1 -I 3 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+age <= 40
+|   plas <= 103: tested_negative (50.0/1.0)
+|   plas > 103
+|   |   insu <= 360
+|   |   |   mass <= 25.9: tested_negative (7.0)
+|   |   |   mass > 25.9
+|   |   |   |   plas <= 147
+|   |   |   |   |   insu <= 0: tested_positive (16.0/3.0)
+|   |   |   |   |   insu > 0
+|   |   |   |   |   |   pedi <= 0.299: tested_negative (8.0)
+|   |   |   |   |   |   pedi > 0.299
+|   |   |   |   |   |   |   age <= 23: tested_negative (8.0/1.0)
+|   |   |   |   |   |   |   age > 23
+|   |   |   |   |   |   |   |   preg <= 0: tested_positive (3.0)
+|   |   |   |   |   |   |   |   preg > 0
+|   |   |   |   |   |   |   |   |   mass <= 36.3
+|   |   |   |   |   |   |   |   |   |   skin <= 28: tested_negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   skin > 28: tested_positive (5.0)
+|   |   |   |   |   |   |   |   |   mass > 36.3: tested_negative (3.0)
+|   |   |   |   plas > 147: tested_positive (7.0)
+|   |   insu > 360: tested_negative (10.0)
+age > 40
+|   pedi <= 0.515
+|   |   pedi <= 0.427
+|   |   |   pedi <= 0.221
+|   |   |   |   preg <= 8: tested_negative (3.0)
+|   |   |   |   preg > 8: tested_positive (2.0)
+|   |   |   pedi > 0.221: tested_positive (10.0)
+|   |   pedi > 0.427: tested_negative (3.0)
+|   pedi > 0.515: tested_positive (16.0)
+
+Number of Leaves  : 	16
+
+Size of the tree : 	31
+
+
+Weight: 1.69
+
+J48 pruned tree
+------------------
+
+pres <= 54: tested_positive (12.0/1.0)
+pres > 54
+|   plas <= 131
+|   |   insu <= 49: tested_negative (70.0/2.0)
+|   |   insu > 49
+|   |   |   pedi <= 0.507: tested_negative (20.0/1.0)
+|   |   |   pedi > 0.507
+|   |   |   |   insu <= 78: tested_positive (6.0)
+|   |   |   |   insu > 78
+|   |   |   |   |   age <= 27: tested_negative (3.0)
+|   |   |   |   |   age > 27: tested_positive (3.0/1.0)
+|   plas > 131
+|   |   pedi <= 0.551
+|   |   |   mass <= 32.4: tested_negative (15.0)
+|   |   |   mass > 32.4
+|   |   |   |   pres <= 84: tested_positive (9.0)
+|   |   |   |   pres > 84: tested_negative (3.0)
+|   |   pedi > 0.551: tested_positive (13.0/1.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Weight: 1.83
+
+J48 pruned tree
+------------------
+
+pres <= 75
+|   preg <= 7
+|   |   plas <= 103
+|   |   |   skin <= 41: tested_negative (27.0/1.0)
+|   |   |   skin > 41: tested_positive (2.0)
+|   |   plas > 103
+|   |   |   skin <= 38
+|   |   |   |   mass <= 31
+|   |   |   |   |   preg <= 1: tested_negative (14.0)
+|   |   |   |   |   preg > 1
+|   |   |   |   |   |   mass <= 28.2
+|   |   |   |   |   |   |   mass <= 26.2
+|   |   |   |   |   |   |   |   preg <= 2: tested_negative (4.0)
+|   |   |   |   |   |   |   |   preg > 2: tested_positive (4.0/1.0)
+|   |   |   |   |   |   |   mass > 26.2: tested_positive (11.0)
+|   |   |   |   |   |   mass > 28.2: tested_negative (5.0)
+|   |   |   |   mass > 31: tested_positive (11.0)
+|   |   |   skin > 38: tested_negative (6.0)
+|   preg > 7: tested_negative (9.0)
+pres > 75
+|   age <= 24: tested_negative (5.0)
+|   age > 24
+|   |   mass <= 27.8: tested_negative (5.0)
+|   |   mass > 27.8: tested_positive (51.0/1.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Weight: 2.14
+
+Number of performed Iterations: 3
+
+
+Time taken to build model: 0.24 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         150               97.4026 %
+Incorrectly Classified Instances         4                2.5974 %
+Kappa statistic                          0.9447
+Mean absolute error                      0.0958
+Root mean squared error                  0.1773
+Relative absolute error                 20.3795 %
+Root relative squared error             36.5912 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 94  2 |  a = tested_negative
+  2 56 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         157               68.2609 %
+Incorrectly Classified Instances        73               31.7391 %
+Kappa statistic                          0.326 
+Mean absolute error                      0.3376
+Root mean squared error                  0.5149
+Relative absolute error                 72.9181 %
+Root relative squared error            107.8866 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 107  43 |   a = tested_negative
+  30  50 |   b = tested_positive
+

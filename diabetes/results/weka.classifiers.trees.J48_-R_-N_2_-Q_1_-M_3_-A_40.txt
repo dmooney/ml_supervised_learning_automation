@@ -1,0 +1,70 @@
+
+Options: -R -N 2 -Q 1 -M 3 -A 
+
+J48 pruned tree
+------------------
+
+age <= 28
+|   mass <= 28.7: tested_negative (38.0)
+|   mass > 28.7
+|   |   pedi <= 1.138: tested_negative (40.0/9.0)
+|   |   pedi > 1.138: tested_positive (3.0)
+age > 28
+|   insu <= 165
+|   |   plas <= 103: tested_negative (16.0/2.0)
+|   |   plas > 103
+|   |   |   mass <= 34.2
+|   |   |   |   pres <= 64: tested_positive (4.0)
+|   |   |   |   pres > 64
+|   |   |   |   |   mass <= 27.3: tested_negative (7.0)
+|   |   |   |   |   mass > 27.3
+|   |   |   |   |   |   pedi <= 0.352: tested_negative (12.0/4.0)
+|   |   |   |   |   |   pedi > 0.352: tested_positive (5.0)
+|   |   |   mass > 34.2: tested_positive (17.0/2.0)
+|   insu > 165: tested_positive (12.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.07 seconds
+Time taken to test model on training data: 0.05 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         256               83.3876 %
+Incorrectly Classified Instances        51               16.6124 %
+Kappa statistic                          0.6188
+Mean absolute error                      0.257 
+Root mean squared error                  0.3659
+Relative absolute error                 56.3089 %
+Root relative squared error             76.6182 %
+Total Number of Instances              307     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 184  15 |   a = tested_negative
+  36  72 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         162               70.4348 %
+Incorrectly Classified Instances        68               29.5652 %
+Kappa statistic                          0.3288
+Mean absolute error                      0.3442
+Root mean squared error                  0.469 
+Relative absolute error                 75.6085 %
+Root relative squared error             98.4725 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 121  29 |   a = tested_negative
+  39  41 |   b = tested_positive
+

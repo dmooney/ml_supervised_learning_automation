@@ -1,0 +1,47 @@
+
+Options: -K 8 -W 0 -A "weka.core.neighboursearch.KDTree -A "weka.core.EuclideanDistance -R first-last" -S weka.core.neighboursearch.kdtrees.SlidingMidPointOfWidestSide -W 0.01 -L 40 -N" 
+
+IB1 instance-based classifier
+using 8 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.06 seconds
+Time taken to test model on training data: 0.13 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         117               75.974  %
+Incorrectly Classified Instances        37               24.026  %
+Kappa statistic                          0.4234
+Mean absolute error                      0.3225
+Root mean squared error                  0.3866
+Relative absolute error                 68.6308 %
+Root relative squared error             79.7949 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 94  2 |  a = tested_negative
+ 35 23 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         152               66.087  %
+Incorrectly Classified Instances        78               33.913  %
+Kappa statistic                          0.1593
+Mean absolute error                      0.373 
+Root mean squared error                  0.45  
+Relative absolute error                 80.5803 %
+Root relative squared error             94.2974 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 130  20 |   a = tested_negative
+  58  22 |   b = tested_positive
+

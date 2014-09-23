@@ -1,0 +1,84 @@
+
+Options: -U -M 3 -A 
+
+J48 unpruned tree
+------------------
+
+mass <= 25.4: tested_negative (27.0/1.0)
+mass > 25.4
+|   age <= 24
+|   |   insu <= 130
+|   |   |   plas <= 103: tested_negative (8.0)
+|   |   |   plas > 103
+|   |   |   |   pres <= 78
+|   |   |   |   |   preg <= 0: tested_positive (3.0)
+|   |   |   |   |   preg > 0
+|   |   |   |   |   |   age <= 22
+|   |   |   |   |   |   |   mass <= 31: tested_negative (3.0/1.0)
+|   |   |   |   |   |   |   mass > 31: tested_positive (3.0)
+|   |   |   |   |   |   age > 22: tested_negative (3.0)
+|   |   |   |   pres > 78: tested_negative (5.0)
+|   |   insu > 130: tested_negative (13.0)
+|   age > 24
+|   |   plas <= 101
+|   |   |   insu <= 85: tested_negative (17.0/1.0)
+|   |   |   insu > 85
+|   |   |   |   preg <= 2: tested_negative (3.0/1.0)
+|   |   |   |   preg > 2: tested_positive (3.0)
+|   |   plas > 101
+|   |   |   pedi <= 0.551
+|   |   |   |   mass <= 34.9
+|   |   |   |   |   insu <= 155: tested_negative (25.0/8.0)
+|   |   |   |   |   insu > 155: tested_positive (3.0)
+|   |   |   |   mass > 34.9
+|   |   |   |   |   insu <= 155: tested_positive (9.0)
+|   |   |   |   |   insu > 155: tested_negative (3.0/1.0)
+|   |   |   pedi > 0.551
+|   |   |   |   insu <= 258: tested_positive (23.0)
+|   |   |   |   insu > 258: tested_negative (3.0/1.0)
+
+Number of Leaves  : 	17
+
+Size of the tree : 	33
+
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         140               90.9091 %
+Incorrectly Classified Instances        14                9.0909 %
+Kappa statistic                          0.7967
+Mean absolute error                      0.1885
+Root mean squared error                  0.2683
+Relative absolute error                 40.1016 %
+Root relative squared error             55.3672 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 96  0 |  a = tested_negative
+ 14 44 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         149               64.7826 %
+Incorrectly Classified Instances        81               35.2174 %
+Kappa statistic                          0.198 
+Mean absolute error                      0.3771
+Root mean squared error                  0.5129
+Relative absolute error                 81.4585 %
+Root relative squared error            107.4671 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 115  35 |   a = tested_negative
+  46  34 |   b = tested_positive
+

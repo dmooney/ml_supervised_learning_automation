@@ -1,0 +1,72 @@
+
+Options: -C 0.1 -M 4 -A 
+
+J48 pruned tree
+------------------
+
+plas <= 154
+|   mass <= 26.3: tested_negative (96.0/3.0)
+|   mass > 26.3
+|   |   plas <= 99: tested_negative (76.0/8.0)
+|   |   plas > 99
+|   |   |   age <= 28
+|   |   |   |   skin <= 0
+|   |   |   |   |   pres <= 58: tested_positive (5.0)
+|   |   |   |   |   pres > 58
+|   |   |   |   |   |   age <= 23: tested_positive (5.0/1.0)
+|   |   |   |   |   |   age > 23: tested_negative (7.0/1.0)
+|   |   |   |   skin > 0: tested_negative (77.0/12.0)
+|   |   |   age > 28: tested_positive (123.0/51.0)
+plas > 154
+|   pedi <= 0.306
+|   |   pedi <= 0.269
+|   |   |   pedi <= 0.218: tested_negative (8.0/3.0)
+|   |   |   pedi > 0.218: tested_positive (5.0)
+|   |   pedi > 0.269: tested_negative (4.0)
+|   pedi > 0.306: tested_positive (55.0/5.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+
+Time taken to build model: 0.13 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         377               81.7787 %
+Incorrectly Classified Instances        84               18.2213 %
+Kappa statistic                          0.6173
+Mean absolute error                      0.2639
+Root mean squared error                  0.3564
+Relative absolute error                 57.7057 %
+Root relative squared error             74.5503 %
+Total Number of Instances              461     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 241  57 |   a = tested_negative
+  27 136 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         159               69.1304 %
+Incorrectly Classified Instances        71               30.8696 %
+Kappa statistic                          0.3407
+Mean absolute error                      0.3274
+Root mean squared error                  0.4315
+Relative absolute error                 71.8476 %
+Root relative squared error             90.5911 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 109  41 |   a = tested_negative
+  30  50 |   b = tested_positive
+

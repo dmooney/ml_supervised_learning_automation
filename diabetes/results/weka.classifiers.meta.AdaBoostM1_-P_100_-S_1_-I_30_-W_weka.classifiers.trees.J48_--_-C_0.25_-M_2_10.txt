@@ -1,0 +1,700 @@
+
+Options: -P 100 -S 1 -I 30 -W weka.classifiers.trees.J48 -- -C 0.25 -M 2 
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+age <= 27
+|   mass <= 30.5: tested_negative (19.0)
+|   mass > 30.5
+|   |   pedi <= 1.127
+|   |   |   mass <= 33.6: tested_positive (4.0/1.0)
+|   |   |   mass > 33.6: tested_negative (14.0/1.0)
+|   |   pedi > 1.127: tested_positive (3.0)
+age > 27
+|   plas <= 106
+|   |   age <= 43: tested_negative (9.0)
+|   |   age > 43: tested_positive (5.0/1.0)
+|   plas > 106: tested_positive (23.0/2.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.67
+
+J48 pruned tree
+------------------
+
+pres <= 90
+|   preg <= 8
+|   |   plas <= 165: tested_negative (58.61/6.95)
+|   |   plas > 165: tested_positive (3.21)
+|   preg > 8: tested_positive (7.49/1.07)
+pres > 90: tested_positive (7.7)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Weight: 2.15
+
+J48 pruned tree
+------------------
+
+plas <= 103
+|   insu <= 78: tested_negative (14.5/0.6)
+|   insu > 78: tested_positive (4.36/1.19)
+plas > 103
+|   insu <= 176
+|   |   pedi <= 0.221
+|   |   |   pres <= 0: tested_positive (2.57)
+|   |   |   pres > 0: tested_negative (6.39/0.3)
+|   |   pedi > 0.221: tested_positive (35.63/2.39)
+|   insu > 176
+|   |   preg <= 4: tested_negative (10.68/0.3)
+|   |   preg > 4: tested_positive (2.87)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.72
+
+J48 pruned tree
+------------------
+
+age <= 42
+|   pres <= 50: tested_positive (4.26/0.16)
+|   pres > 50
+|   |   pres <= 62: tested_negative (14.83)
+|   |   pres > 62
+|   |   |   pres <= 90
+|   |   |   |   pedi <= 0.507: tested_negative (19.33/1.69)
+|   |   |   |   pedi > 0.507
+|   |   |   |   |   age <= 27
+|   |   |   |   |   |   age <= 22
+|   |   |   |   |   |   |   insu <= 105: tested_positive (3.05/0.16)
+|   |   |   |   |   |   |   insu > 105: tested_negative (2.41)
+|   |   |   |   |   |   age > 22: tested_negative (5.29/0.16)
+|   |   |   |   |   age > 27: tested_positive (5.78/0.16)
+|   |   |   pres > 90: tested_positive (2.29)
+age > 42
+|   pedi <= 0.144: tested_negative (2.29)
+|   pedi > 0.144: tested_positive (17.46/2.29)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Weight: 2.75
+
+J48 pruned tree
+------------------
+
+plas <= 147
+|   preg <= 8: tested_negative (52.06/9.22)
+|   preg > 8: tested_positive (5.85/1.46)
+plas > 147: tested_positive (19.09/1.3)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Weight: 1.69
+
+J48 pruned tree
+------------------
+
+plas <= 101
+|   skin <= 31: tested_negative (19.69/0.1)
+|   skin > 31: tested_positive (4.69/1.59)
+plas > 101
+|   preg <= 3
+|   |   mass <= 31.2: tested_negative (7.2)
+|   |   mass > 31.2
+|   |   |   insu <= 130: tested_positive (14.17/1.57)
+|   |   |   insu > 130: tested_negative (3.42/0.76)
+|   preg > 3: tested_positive (27.84/1.63)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Weight: 2.54
+
+J48 pruned tree
+------------------
+
+plas <= 103: tested_negative (29.71/2.76)
+plas > 103
+|   age <= 24
+|   |   age <= 22: tested_positive (3.45/0.9)
+|   |   age > 22: tested_negative (14.69/1.26)
+|   age > 24
+|   |   pedi <= 0.144: tested_negative (5.26)
+|   |   pedi > 0.144: tested_positive (23.9/2.01)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Weight: 2.31
+
+J48 pruned tree
+------------------
+
+pres <= 50: tested_positive (14.95/0.23)
+pres > 50
+|   preg <= 8
+|   |   plas <= 147: tested_negative (45.08/6.71)
+|   |   plas > 147: tested_positive (6.72/1.24)
+|   preg > 8: tested_positive (10.25/1.39)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Weight: 1.95
+
+J48 pruned tree
+------------------
+
+insu <= 271
+|   plas <= 76: tested_negative (4.5)
+|   plas > 76
+|   |   mass <= 30.8
+|   |   |   age <= 42: tested_negative (12.24/0.54)
+|   |   |   age > 42: tested_positive (3.89)
+|   |   mass > 30.8
+|   |   |   mass <= 33.6: tested_positive (20.78/0.13)
+|   |   |   mass > 33.6
+|   |   |   |   age <= 25: tested_negative (6.06/0.14)
+|   |   |   |   age > 25
+|   |   |   |   |   pedi <= 0.51
+|   |   |   |   |   |   pedi <= 0.444
+|   |   |   |   |   |   |   mass <= 38.2: tested_negative (3.99/1.22)
+|   |   |   |   |   |   |   mass > 38.2: tested_positive (8.61/0.01)
+|   |   |   |   |   |   pedi > 0.444: tested_negative (3.21)
+|   |   |   |   |   pedi > 0.51: tested_positive (8.54)
+insu > 271: tested_negative (5.17)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Weight: 3.61
+
+J48 pruned tree
+------------------
+
+preg <= 10
+|   pedi <= 1.101
+|   |   insu <= 130
+|   |   |   plas <= 101
+|   |   |   |   skin <= 31: tested_negative (4.66)
+|   |   |   |   skin > 31
+|   |   |   |   |   pres <= 54: tested_positive (2.05)
+|   |   |   |   |   pres > 54: tested_negative (2.42/0.67)
+|   |   |   plas > 101: tested_positive (23.65/4.62)
+|   |   insu > 130: tested_negative (10.03/1.42)
+|   pedi > 1.101: tested_positive (13.1/0.05)
+preg > 10: tested_positive (21.09)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.34
+
+J48 pruned tree
+------------------
+
+age <= 27
+|   pres <= 50: tested_positive (2.52/0.26)
+|   pres > 50
+|   |   pedi <= 1.127: tested_negative (26.74/2.1)
+|   |   pedi > 1.127: tested_positive (2.53/0.28)
+age > 27
+|   pedi <= 0.189: tested_negative (5.65/0.04)
+|   pedi > 0.189: tested_positive (39.56/4.02)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Weight: 2.35
+
+J48 pruned tree
+------------------
+
+pres <= 88
+|   plas <= 147
+|   |   age <= 22: tested_positive (5.83/0.89)
+|   |   age > 22
+|   |   |   pres <= 50
+|   |   |   |   plas <= 95: tested_negative (2.13/0.62)
+|   |   |   |   plas > 95: tested_positive (2.87)
+|   |   |   pres > 50
+|   |   |   |   age <= 42: tested_negative (35.67/1.62)
+|   |   |   |   age > 42
+|   |   |   |   |   skin <= 8: tested_negative (6.6/1.03)
+|   |   |   |   |   skin > 8: tested_positive (9.3)
+|   plas > 147: tested_positive (6.24/0.72)
+pres > 88: tested_positive (8.36/0.05)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 2.68
+
+J48 pruned tree
+------------------
+
+age <= 25
+|   preg <= 0
+|   |   mass <= 34.9: tested_positive (2.74)
+|   |   mass > 34.9: tested_negative (5.19/0.4)
+|   preg > 0: tested_negative (13.16/0.26)
+age > 25
+|   plas <= 106
+|   |   pres <= 54: tested_positive (4.83)
+|   |   pres > 54
+|   |   |   preg <= 11: tested_negative (13.93/1.22)
+|   |   |   preg > 11: tested_positive (4.6)
+|   plas > 106
+|   |   pedi <= 0.189: tested_negative (2.36/0.11)
+|   |   pedi > 0.189: tested_positive (30.19/2.28)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 2.84
+
+J48 pruned tree
+------------------
+
+preg <= 3
+|   plas <= 166
+|   |   pres <= 50: tested_positive (2.73)
+|   |   pres > 50
+|   |   |   pres <= 90
+|   |   |   |   pedi <= 0.507: tested_negative (28.65)
+|   |   |   |   pedi > 0.507
+|   |   |   |   |   pedi <= 0.529: tested_positive (3.06/0.01)
+|   |   |   |   |   pedi > 0.529: tested_negative (3.57)
+|   |   |   pres > 90: tested_positive (2.14)
+|   plas > 166: tested_positive (4.83)
+preg > 3
+|   plas <= 88: tested_negative (2.48)
+|   plas > 88: tested_positive (29.55/3.17)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 3.15
+
+J48 pruned tree
+------------------
+
+preg <= 8
+|   pedi <= 1.101: tested_negative (61.97/7.75)
+|   pedi > 1.101: tested_positive (3.73/0.23)
+preg > 8
+|   skin <= 0: tested_negative (2.66/0.52)
+|   skin > 0: tested_positive (8.63)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Weight: 2.09
+
+J48 pruned tree
+------------------
+
+skin <= 28
+|   plas <= 131: tested_negative (19.22/1.31)
+|   plas > 131
+|   |   insu <= 90: tested_positive (12.17)
+|   |   insu > 90: tested_negative (4.23/0.01)
+skin > 28
+|   insu <= 130: tested_positive (29.31/1.5)
+|   insu > 130
+|   |   plas <= 148: tested_negative (9.05/0.0)
+|   |   plas > 148: tested_positive (3.02/0.06)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Weight: 3.25
+
+J48 pruned tree
+------------------
+
+pres <= 50: tested_positive (11.18/0.07)
+pres > 50
+|   preg <= 8
+|   |   plas <= 103: tested_negative (16.53)
+|   |   plas > 103
+|   |   |   pedi <= 0.221: tested_negative (8.82)
+|   |   |   pedi > 0.221
+|   |   |   |   age <= 29
+|   |   |   |   |   pres <= 90
+|   |   |   |   |   |   age <= 22: tested_positive (2.18/0.27)
+|   |   |   |   |   |   age > 22: tested_negative (12.84/2.09)
+|   |   |   |   |   pres > 90: tested_positive (2.62)
+|   |   |   |   age > 29: tested_positive (9.29)
+|   preg > 8: tested_positive (13.53/0.62)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 3.19
+
+J48 pruned tree
+------------------
+
+plas <= 147
+|   preg <= 10
+|   |   pres <= 50: tested_positive (6.61/0.82)
+|   |   pres > 50: tested_negative (37.51/8.1)
+|   preg > 10: tested_positive (4.96)
+plas > 147: tested_positive (27.91/0.66)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+Weight: 1.95
+
+J48 pruned tree
+------------------
+
+plas <= 114
+|   skin <= 0: tested_negative (8.98)
+|   skin > 0
+|   |   preg <= 8
+|   |   |   insu <= 64: tested_positive (4.24/0.92)
+|   |   |   insu > 64: tested_negative (6.13/0.93)
+|   |   preg > 8: tested_positive (6.33)
+plas > 114
+|   age <= 24
+|   |   skin <= 11: tested_positive (2.29)
+|   |   skin > 11: tested_negative (5.34/0.01)
+|   age > 24: tested_positive (43.7/2.33)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.85
+
+J48 pruned tree
+------------------
+
+plas <= 75: tested_negative (8.95)
+plas > 75
+|   pedi <= 0.221: tested_negative (15.55/1.06)
+|   pedi > 0.221
+|   |   preg <= 2
+|   |   |   preg <= 1
+|   |   |   |   skin <= 25: tested_negative (4.88)
+|   |   |   |   skin > 25: tested_positive (15.5/2.77)
+|   |   |   preg > 1: tested_negative (5.81/0.0)
+|   |   preg > 2
+|   |   |   age <= 25: tested_negative (2.61/0.35)
+|   |   |   age > 25: tested_positive (23.7/1.02)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.63
+
+J48 pruned tree
+------------------
+
+pres <= 50: tested_positive (12.13/0.94)
+pres > 50
+|   preg <= 8
+|   |   plas <= 103: tested_negative (16.4)
+|   |   plas > 103
+|   |   |   pedi <= 0.605
+|   |   |   |   age <= 27: tested_negative (24.08/2.48)
+|   |   |   |   age > 27
+|   |   |   |   |   pedi <= 0.189: tested_negative (3.99)
+|   |   |   |   |   pedi > 0.189: tested_positive (7.45/2.14)
+|   |   |   pedi > 0.605: tested_positive (8.17/1.25)
+|   preg > 8: tested_positive (4.78/1.28)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.14
+
+J48 pruned tree
+------------------
+
+pres <= 90
+|   pres <= 0: tested_positive (3.58)
+|   pres > 0
+|   |   insu <= 96
+|   |   |   insu <= 63
+|   |   |   |   plas <= 131: tested_negative (21.67/1.44)
+|   |   |   |   plas > 131
+|   |   |   |   |   preg <= 0: tested_negative (2.5/0.63)
+|   |   |   |   |   preg > 0: tested_positive (3.77)
+|   |   |   insu > 63
+|   |   |   |   mass <= 34: tested_positive (7.37/0.4)
+|   |   |   |   mass > 34: tested_negative (2.55/0.74)
+|   |   insu > 96: tested_negative (28.16/2.33)
+pres > 90: tested_positive (7.4)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Weight: 2.56
+
+J48 pruned tree
+------------------
+: tested_positive (77.0/29.57)
+
+Number of Leaves  : 	1
+
+Size of the tree : 	1
+
+
+Weight: 0.47
+
+J48 pruned tree
+------------------
+
+plas <= 165: tested_negative (67.51/29.01)
+plas > 165: tested_positive (9.49)
+
+Number of Leaves  : 	2
+
+Size of the tree : 	3
+
+
+Weight: 0.5
+
+J48 pruned tree
+------------------
+
+insu <= 271
+|   plas <= 147
+|   |   plas <= 145
+|   |   |   plas <= 114
+|   |   |   |   skin <= 0: tested_negative (7.27)
+|   |   |   |   skin > 0
+|   |   |   |   |   preg <= 8
+|   |   |   |   |   |   pres <= 64
+|   |   |   |   |   |   |   insu <= 88: tested_positive (5.21/1.16)
+|   |   |   |   |   |   |   insu > 88: tested_negative (2.39)
+|   |   |   |   |   |   pres > 64: tested_negative (4.28/0.05)
+|   |   |   |   |   preg > 8: tested_positive (7.51)
+|   |   |   plas > 114: tested_positive (24.68/4.11)
+|   |   plas > 145: tested_negative (8.0/0.42)
+|   plas > 147: tested_positive (13.52)
+insu > 271: tested_negative (4.14)
+
+Number of Leaves  : 	9
+
+Size of the tree : 	17
+
+
+Weight: 2.52
+
+J48 pruned tree
+------------------
+
+plas <= 146
+|   preg <= 8
+|   |   age <= 21: tested_negative (11.51)
+|   |   age > 21
+|   |   |   plas <= 116
+|   |   |   |   plas <= 106: tested_negative (8.76/2.19)
+|   |   |   |   plas > 106: tested_positive (6.17/0.0)
+|   |   |   plas > 116
+|   |   |   |   pres <= 90
+|   |   |   |   |   pres <= 72
+|   |   |   |   |   |   skin <= 23: tested_positive (2.28)
+|   |   |   |   |   |   skin > 23: tested_negative (5.43)
+|   |   |   |   |   pres > 72: tested_negative (22.12/0.02)
+|   |   |   |   pres > 90: tested_positive (2.32)
+|   preg > 8
+|   |   skin <= 14: tested_negative (2.36/0.52)
+|   |   skin > 14: tested_positive (4.18)
+plas > 146: tested_positive (11.87/1.74)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Weight: 2.79
+
+J48 pruned tree
+------------------
+
+mass <= 39.4
+|   plas <= 119
+|   |   skin <= 0: tested_negative (2.65/0.6)
+|   |   skin > 0: tested_positive (31.04/1.98)
+|   plas > 119
+|   |   plas <= 146: tested_negative (11.94/0.5)
+|   |   plas > 146: tested_positive (4.94/0.39)
+mass > 39.4
+|   age <= 24: tested_negative (21.0/0.0)
+|   age > 24
+|   |   preg <= 0: tested_positive (2.05)
+|   |   preg > 0: tested_negative (3.37/0.0)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 3.05
+
+J48 pruned tree
+------------------
+
+pres <= 50: tested_positive (10.73/0.38)
+pres > 50
+|   age <= 42
+|   |   pedi <= 0.507: tested_negative (30.1/1.65)
+|   |   pedi > 0.507
+|   |   |   pedi <= 0.529: tested_positive (7.07/0.0)
+|   |   |   pedi > 0.529
+|   |   |   |   plas <= 131: tested_negative (15.89/0.81)
+|   |   |   |   plas > 131: tested_positive (3.83/0.0)
+|   age > 42
+|   |   pedi <= 0.144: tested_negative (2.12)
+|   |   pedi > 0.144: tested_positive (7.25/0.17)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 3.2
+
+J48 pruned tree
+------------------
+
+plas <= 114
+|   mass <= 33.6
+|   |   mass <= 30.8: tested_negative (8.51/1.21)
+|   |   mass > 30.8: tested_positive (5.45/0.28)
+|   mass > 33.6: tested_negative (12.8/0.53)
+plas > 114
+|   insu <= 271: tested_positive (45.16/5.84)
+|   insu > 271: tested_negative (5.08)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Weight: 2.17
+
+J48 pruned tree
+------------------
+
+preg <= 8
+|   pres <= 90
+|   |   mass <= 39.4
+|   |   |   skin <= 40
+|   |   |   |   mass <= 33.6
+|   |   |   |   |   mass <= 32: tested_negative (15.49/2.25)
+|   |   |   |   |   mass > 32: tested_positive (9.95)
+|   |   |   |   mass > 33.6: tested_negative (14.75/0.94)
+|   |   |   skin > 40: tested_positive (5.81/0.0)
+|   |   mass > 39.4: tested_negative (16.28/0.13)
+|   pres > 90: tested_positive (4.59)
+preg > 8: tested_positive (10.12/0.51)
+
+Number of Leaves  : 	7
+
+Size of the tree : 	13
+
+
+Weight: 2.95
+
+Number of performed Iterations: 30
+
+
+Time taken to build model: 0.36 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          77              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances               77     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 45  0 |  a = tested_negative
+  0 32 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         162               70.4348 %
+Incorrectly Classified Instances        68               29.5652 %
+Kappa statistic                          0.3876
+Mean absolute error                      0.2976
+Root mean squared error                  0.5403
+Relative absolute error                 62.6627 %
+Root relative squared error            112.2454 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 105  45 |   a = tested_negative
+  23  57 |   b = tested_positive
+

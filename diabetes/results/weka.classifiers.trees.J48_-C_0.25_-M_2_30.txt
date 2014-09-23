@@ -1,0 +1,70 @@
+
+Options: -C 0.25 -M 2 
+
+J48 pruned tree
+------------------
+
+preg <= 8
+|   plas <= 103
+|   |   pres <= 50
+|   |   |   preg <= 4: tested_positive (2.0)
+|   |   |   preg > 4: tested_negative (4.0)
+|   |   pres > 50: tested_negative (59.0/1.0)
+|   plas > 103
+|   |   age <= 28
+|   |   |   plas <= 166: tested_negative (69.0/14.0)
+|   |   |   plas > 166: tested_positive (4.0)
+|   |   age > 28
+|   |   |   mass <= 32.4
+|   |   |   |   pedi <= 0.249: tested_negative (9.0)
+|   |   |   |   pedi > 0.249
+|   |   |   |   |   preg <= 7: tested_positive (24.0/8.0)
+|   |   |   |   |   preg > 7: tested_negative (4.0)
+|   |   |   mass > 32.4: tested_positive (30.0/6.0)
+preg > 8: tested_positive (25.0/5.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.12 seconds
+Time taken to test model on training data: 0.09 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         196               85.2174 %
+Incorrectly Classified Instances        34               14.7826 %
+Kappa statistic                          0.6796
+Mean absolute error                      0.2285
+Root mean squared error                  0.338 
+Relative absolute error                 50.0327 %
+Root relative squared error             70.7628 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 130  19 |   a = tested_negative
+  15  66 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         138               60      %
+Incorrectly Classified Instances        92               40      %
+Kappa statistic                          0.1623
+Mean absolute error                      0.4107
+Root mean squared error                  0.551 
+Relative absolute error                 90.1833 %
+Root relative squared error            115.6837 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 95 55 |  a = tested_negative
+ 37 43 |  b = tested_positive
+

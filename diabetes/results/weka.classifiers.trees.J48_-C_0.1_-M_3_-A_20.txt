@@ -1,0 +1,70 @@
+
+Options: -C 0.1 -M 3 -A 
+
+J48 pruned tree
+------------------
+
+mass <= 25.4: tested_negative (27.0/1.0)
+mass > 25.4
+|   age <= 24: tested_negative (38.0/7.0)
+|   age > 24
+|   |   plas <= 101
+|   |   |   insu <= 85: tested_negative (17.0/1.0)
+|   |   |   insu > 85: tested_positive (6.0/2.0)
+|   |   plas > 101
+|   |   |   pedi <= 0.551
+|   |   |   |   mass <= 34.9
+|   |   |   |   |   insu <= 155: tested_negative (25.0/8.0)
+|   |   |   |   |   insu > 155: tested_positive (3.0)
+|   |   |   |   mass > 34.9
+|   |   |   |   |   insu <= 155: tested_positive (9.0)
+|   |   |   |   |   insu > 155: tested_negative (3.0/1.0)
+|   |   |   pedi > 0.551
+|   |   |   |   insu <= 258: tested_positive (23.0)
+|   |   |   |   insu > 258: tested_negative (3.0/1.0)
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.12 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         133               86.3636 %
+Incorrectly Classified Instances        21               13.6364 %
+Kappa statistic                          0.6917
+Mean absolute error                      0.2337
+Root mean squared error                  0.323 
+Relative absolute error                 49.7311 %
+Root relative squared error             66.6631 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 94  2 |  a = tested_negative
+ 19 39 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         151               65.6522 %
+Incorrectly Classified Instances        79               34.3478 %
+Kappa statistic                          0.2131
+Mean absolute error                      0.3796
+Root mean squared error                  0.504 
+Relative absolute error                 81.9996 %
+Root relative squared error            105.6085 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 117  33 |   a = tested_negative
+  46  34 |   b = tested_positive
+

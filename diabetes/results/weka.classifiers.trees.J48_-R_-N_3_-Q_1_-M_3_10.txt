@@ -1,0 +1,56 @@
+
+Options: -R -N 3 -Q 1 -M 3 
+
+J48 pruned tree
+------------------
+
+preg <= 6
+|   plas <= 166: tested_negative (36.0/8.0)
+|   plas > 166: tested_positive (3.0)
+preg > 6: tested_positive (13.0/2.0)
+
+Number of Leaves  : 	3
+
+Size of the tree : 	5
+
+
+Time taken to build model: 0.03 seconds
+Time taken to test model on training data: 0.01 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          60               77.9221 %
+Incorrectly Classified Instances        17               22.0779 %
+Kappa statistic                          0.5262
+Mean absolute error                      0.3216
+Root mean squared error                  0.4122
+Relative absolute error                 66.1513 %
+Root relative squared error             83.6436 %
+Total Number of Instances               77     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 41  4 |  a = tested_negative
+ 13 19 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         163               70.8696 %
+Incorrectly Classified Instances        67               29.1304 %
+Kappa statistic                          0.3326
+Mean absolute error                      0.3722
+Root mean squared error                  0.4723
+Relative absolute error                 78.3576 %
+Root relative squared error             98.1149 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 123  27 |   a = tested_negative
+  40  40 |   b = tested_positive
+

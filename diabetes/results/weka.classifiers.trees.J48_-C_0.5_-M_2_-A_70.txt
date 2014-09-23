@@ -1,0 +1,114 @@
+
+Options: -C 0.5 -M 2 -A 
+
+J48 pruned tree
+------------------
+
+plas <= 144
+|   mass <= 26.3: tested_negative (108.0/3.0)
+|   mass > 26.3
+|   |   plas <= 100
+|   |   |   insu <= 170
+|   |   |   |   skin <= 24: tested_negative (45.0)
+|   |   |   |   skin > 24
+|   |   |   |   |   preg <= 9
+|   |   |   |   |   |   pres <= 52: tested_positive (3.0/1.0)
+|   |   |   |   |   |   pres > 52: tested_negative (44.0/3.0)
+|   |   |   |   |   preg > 9: tested_positive (3.0/1.0)
+|   |   |   insu > 170
+|   |   |   |   age <= 42: tested_negative (2.0)
+|   |   |   |   age > 42: tested_positive (4.0)
+|   |   plas > 100
+|   |   |   age <= 28
+|   |   |   |   skin <= 0
+|   |   |   |   |   pres <= 58: tested_positive (4.0)
+|   |   |   |   |   pres > 58
+|   |   |   |   |   |   age <= 23
+|   |   |   |   |   |   |   age <= 21: tested_negative (2.0)
+|   |   |   |   |   |   |   age > 21: tested_positive (4.0)
+|   |   |   |   |   |   age > 23: tested_negative (5.0)
+|   |   |   |   skin > 0
+|   |   |   |   |   pres <= 61: tested_negative (16.0)
+|   |   |   |   |   pres > 61
+|   |   |   |   |   |   preg <= 2
+|   |   |   |   |   |   |   mass <= 45.4: tested_negative (44.0/6.0)
+|   |   |   |   |   |   |   mass > 45.4: tested_positive (2.0)
+|   |   |   |   |   |   preg > 2
+|   |   |   |   |   |   |   mass <= 32.4: tested_positive (6.0/2.0)
+|   |   |   |   |   |   |   mass > 32.4: tested_negative (10.0/1.0)
+|   |   |   age > 28
+|   |   |   |   age <= 56
+|   |   |   |   |   pedi <= 0.528: tested_positive (74.0/36.0)
+|   |   |   |   |   pedi > 0.528
+|   |   |   |   |   |   skin <= 21
+|   |   |   |   |   |   |   preg <= 7
+|   |   |   |   |   |   |   |   mass <= 32.7
+|   |   |   |   |   |   |   |   |   preg <= 3: tested_negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   preg > 3: tested_positive (2.0)
+|   |   |   |   |   |   |   |   mass > 32.7: tested_negative (3.0)
+|   |   |   |   |   |   |   preg > 7: tested_positive (4.0)
+|   |   |   |   |   |   skin > 21: tested_positive (23.0/1.0)
+|   |   |   |   age > 56
+|   |   |   |   |   pedi <= 0.435: tested_negative (8.0)
+|   |   |   |   |   pedi > 0.435
+|   |   |   |   |   |   preg <= 6: tested_positive (2.0)
+|   |   |   |   |   |   preg > 6: tested_negative (2.0)
+plas > 144
+|   plas <= 165
+|   |   preg <= 7
+|   |   |   skin <= 41: tested_positive (38.0/17.0)
+|   |   |   skin > 41: tested_negative (5.0)
+|   |   preg > 7: tested_positive (16.0/2.0)
+|   plas > 165
+|   |   pedi <= 0.326
+|   |   |   mass <= 35.4
+|   |   |   |   plas <= 176: tested_positive (4.0/1.0)
+|   |   |   |   plas > 176: tested_negative (4.0)
+|   |   |   mass > 35.4: tested_positive (5.0)
+|   |   pedi > 0.326: tested_positive (43.0/2.0)
+
+Number of Leaves  : 	32
+
+Size of the tree : 	63
+
+
+Time taken to build model: 0.19 seconds
+Time taken to test model on training data: 0.04 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         461               85.6877 %
+Incorrectly Classified Instances        77               14.3123 %
+Kappa statistic                          0.7031
+Mean absolute error                      0.2112
+Root mean squared error                  0.3063
+Relative absolute error                 46.428  %
+Root relative squared error             64.249  %
+Total Number of Instances              538     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 287  63 |   a = tested_negative
+  14 174 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         155               67.3913 %
+Incorrectly Classified Instances        75               32.6087 %
+Kappa statistic                          0.3114
+Mean absolute error                      0.3272
+Root mean squared error                  0.4608
+Relative absolute error                 72.0213 %
+Root relative squared error             96.7522 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 105  45 |   a = tested_negative
+  30  50 |   b = tested_positive
+

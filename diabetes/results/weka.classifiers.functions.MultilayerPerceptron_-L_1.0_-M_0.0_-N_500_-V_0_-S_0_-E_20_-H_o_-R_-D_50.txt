@@ -1,0 +1,83 @@
+
+Options: -L 1.0 -M 0.0 -N 500 -V 0 -S 0 -E 20 -H o -R -D 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.925152304793534
+    Node 2    0.9377819071529544
+    Node 3    4.459483659179588
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.9268420262503854
+    Node 2    -0.9445144759217454
+    Node 3    -4.457630657675472
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.33035852821709444
+    Attrib preg    -0.4285384250197609
+    Attrib plas    -1.3301492245651758
+    Attrib pres    -0.03333032208064009
+    Attrib skin    -0.29745515041571663
+    Attrib insu    0.2513678251925008
+    Attrib mass    -0.8799375500184629
+    Attrib pedi    -0.05908868737494117
+    Attrib age    0.12428368785679936
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.03682620265084144
+    Attrib preg    -1.8249022079892268
+    Attrib plas    -3.8914090470235037
+    Attrib pres    0.6481739878540465
+    Attrib skin    0.08490565927927186
+    Attrib insu    1.4046761800809657
+    Attrib mass    -2.46304206378467
+    Attrib pedi    -1.501097218159125
+    Attrib age    0.1773335518000089
+Class tested_negative
+    Input
+    Node 0
+Class tested_positive
+    Input
+    Node 1
+
+
+Time taken to build model: 0.39 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         301               78.3854 %
+Incorrectly Classified Instances        83               21.6146 %
+Kappa statistic                          0.5131
+Mean absolute error                      0.3127
+Root mean squared error                  0.3904
+Relative absolute error                 67.6654 %
+Root relative squared error             81.2395 %
+Total Number of Instances              384     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 216  29 |   a = tested_negative
+  54  85 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         173               75.2174 %
+Incorrectly Classified Instances        57               24.7826 %
+Kappa statistic                          0.439 
+Mean absolute error                      0.3299
+Root mean squared error                  0.409 
+Relative absolute error                 71.9867 %
+Root relative squared error             85.8288 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 126  24 |   a = tested_negative
+  33  47 |   b = tested_positive
+

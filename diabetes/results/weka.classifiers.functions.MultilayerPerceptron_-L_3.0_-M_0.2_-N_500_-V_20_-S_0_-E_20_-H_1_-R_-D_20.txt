@@ -1,0 +1,70 @@
+
+Options: -L 3.0 -M 0.2 -N 500 -V 20 -S 0 -E 20 -H 1 -R -D 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.1358772121439803
+    Node 2    1.2034613224428432
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.11884589447642377
+    Node 2    -1.175517519269422
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.3674224559040816
+    Attrib preg    -0.8296019408001776
+    Attrib plas    -0.9296399758870785
+    Attrib pres    -0.1923983589663591
+    Attrib skin    -0.14786939179647476
+    Attrib insu    0.49781015739211454
+    Attrib mass    -0.35882210399617903
+    Attrib pedi    -0.41224904915867405
+    Attrib age    -0.8719204874159061
+Class tested_negative
+    Input
+    Node 0
+Class tested_positive
+    Input
+    Node 1
+
+
+Time taken to build model: 0.23 seconds
+Time taken to test model on training data: 0.02 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          96               62.3377 %
+Incorrectly Classified Instances        58               37.6623 %
+Kappa statistic                          0     
+Mean absolute error                      0.4404
+Root mean squared error                  0.4595
+Relative absolute error                 93.7202 %
+Root relative squared error             94.8294 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 96  0 |  a = tested_negative
+ 58  0 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         150               65.2174 %
+Incorrectly Classified Instances        80               34.7826 %
+Kappa statistic                          0     
+Mean absolute error                      0.4432
+Root mean squared error                  0.4621
+Relative absolute error                 95.7425 %
+Root relative squared error             96.8355 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 150   0 |   a = tested_negative
+  80   0 |   b = tested_positive
+

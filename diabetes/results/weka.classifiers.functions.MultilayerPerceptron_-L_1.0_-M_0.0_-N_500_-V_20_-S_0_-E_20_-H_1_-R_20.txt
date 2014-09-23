@@ -1,0 +1,70 @@
+
+Options: -L 1.0 -M 0.0 -N 500 -V 20 -S 0 -E 20 -H 1 -R 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.5396747168939522
+    Node 2    2.978959215304157
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.5376243693727039
+    Node 2    -2.973191289378559
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.166133947554686
+    Attrib preg    -1.5515716907607213
+    Attrib plas    -3.3239098303753325
+    Attrib pres    0.43891124834355916
+    Attrib skin    -0.6623724682259795
+    Attrib insu    1.7459949033256632
+    Attrib mass    -1.4835493578379757
+    Attrib pedi    -1.4828968844859762
+    Attrib age    -1.3411599111826593
+Class tested_negative
+    Input
+    Node 0
+Class tested_positive
+    Input
+    Node 1
+
+
+Time taken to build model: 0.11 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         116               75.3247 %
+Incorrectly Classified Instances        38               24.6753 %
+Kappa statistic                          0.4233
+Mean absolute error                      0.3464
+Root mean squared error                  0.42  
+Relative absolute error                 73.7029 %
+Root relative squared error             86.6854 %
+Total Number of Instances              154     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 90  6 |  a = tested_negative
+ 32 26 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         162               70.4348 %
+Incorrectly Classified Instances        68               29.5652 %
+Kappa statistic                          0.2813
+Mean absolute error                      0.3629
+Root mean squared error                  0.4357
+Relative absolute error                 78.3851 %
+Root relative squared error             91.303  %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132  18 |   a = tested_negative
+  50  30 |   b = tested_positive
+

@@ -1,0 +1,66 @@
+
+Options: -C 0.1 -M 4 
+
+J48 pruned tree
+------------------
+
+age <= 27
+|   mass <= 30.5: tested_negative (19.0)
+|   mass > 30.5
+|   |   insu <= 130
+|   |   |   mass <= 33.6: tested_positive (4.0)
+|   |   |   mass > 33.6
+|   |   |   |   pres <= 64: tested_negative (6.0)
+|   |   |   |   pres > 64: tested_positive (4.0/1.0)
+|   |   insu > 130: tested_negative (7.0)
+age > 27
+|   plas <= 106
+|   |   age <= 43: tested_negative (9.0)
+|   |   age > 43: tested_positive (5.0/1.0)
+|   plas > 106: tested_positive (23.0/2.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+
+Time taken to build model: 0.08 seconds
+Time taken to test model on training data: 0.03 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances          73               94.8052 %
+Incorrectly Classified Instances         4                5.1948 %
+Kappa statistic                          0.895 
+Mean absolute error                      0.0877
+Root mean squared error                  0.2094
+Relative absolute error                 18.0393 %
+Root relative squared error             42.4881 %
+Total Number of Instances               77     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 41  4 |  a = tested_negative
+  0 32 |  b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         140               60.8696 %
+Incorrectly Classified Instances        90               39.1304 %
+Kappa statistic                          0.2549
+Mean absolute error                      0.3873
+Root mean squared error                  0.578 
+Relative absolute error                 81.5353 %
+Root relative squared error            120.0766 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 78 72 |  a = tested_negative
+ 18 62 |  b = tested_positive
+

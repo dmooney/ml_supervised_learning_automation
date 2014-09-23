@@ -1,0 +1,96 @@
+
+Options: -L 3.0 -M 0.2 -N 500 -V 20 -S 0 -E 20 -H 3 -R -D 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.4317310317178586
+    Node 2    0.6896382094193964
+    Node 3    1.7063203069507158
+    Node 4    2.055182441356794
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.4380378201955613
+    Node 2    -0.7448455561537165
+    Node 3    -1.6665683773342153
+    Node 4    -2.056374585222455
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.3416799964870817
+    Attrib preg    -0.6556890537220381
+    Attrib plas    -1.1215392123113004
+    Attrib pres    -0.23141515147532998
+    Attrib skin    0.12345345409334477
+    Attrib insu    0.1839092766721952
+    Attrib mass    -0.6059391423215976
+    Attrib pedi    -0.10247904911527175
+    Attrib age    -0.2799122998018139
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.5264364235153682
+    Attrib preg    -1.1809555526676834
+    Attrib plas    -2.027345734970771
+    Attrib pres    -0.40009421953343366
+    Attrib skin    0.16095098388148343
+    Attrib insu    0.24952727958165388
+    Attrib mass    -1.0353534417717731
+    Attrib pedi    -0.40544941462325046
+    Attrib age    -0.4833520065437506
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.5560496575498798
+    Attrib preg    -1.3188083027124553
+    Attrib plas    -2.345188959058177
+    Attrib pres    -0.416237147909092
+    Attrib skin    0.25073431272243557
+    Attrib insu    0.22708353721242747
+    Attrib mass    -1.2549114957377647
+    Attrib pedi    -0.48816249215263285
+    Attrib age    -0.5633856362972439
+Class tested_negative
+    Input
+    Node 0
+Class tested_positive
+    Input
+    Node 1
+
+
+Time taken to build model: 0.6 seconds
+Time taken to test model on training data: 0.07 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances         231               75.2443 %
+Incorrectly Classified Instances        76               24.7557 %
+Kappa statistic                          0.4281
+Mean absolute error                      0.3454
+Root mean squared error                  0.4009
+Relative absolute error                 75.6934 %
+Root relative squared error             83.9447 %
+Total Number of Instances              307     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 173  26 |   a = tested_negative
+  50  58 |   b = tested_positive
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         166               72.1739 %
+Incorrectly Classified Instances        64               27.8261 %
+Kappa statistic                          0.3446
+Mean absolute error                      0.3694
+Root mean squared error                  0.4247
+Relative absolute error                 81.1623 %
+Root relative squared error             89.1638 %
+Total Number of Instances              230     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 129  21 |   a = tested_negative
+  43  37 |   b = tested_positive
+
